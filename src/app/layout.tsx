@@ -13,14 +13,14 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-    title: 'Nome do App',
-    description: 'Descrição do App',
-    applicationName: 'Nome do App',
+    title: 'React and NextJS Guide',
+    description: 'A complete guide from starting with React to deploying with NextJS',
+    applicationName: 'React and NextJS Guide',
     authors: [{ url: 'www.pedro.site', name: 'Pedro Figueira' }],
-    keywords: ['palavra-chave', 'palavra-chave'],
+    keywords: ['web', 'react', 'nextjs', 'guide', 'webdev', 'frontend'],
     creator: 'Pedro Figueira',
     publisher: 'Pedro Figueira',
-    abstract: 'Descrição do App',
+    abstract: 'A complete guide from starting with React to deploying with NextJS',
 }
 
 export default function RootLayout({
