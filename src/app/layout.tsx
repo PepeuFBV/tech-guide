@@ -38,9 +38,9 @@ export default function RootLayout({
             <body
                 className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen w-full flex`}
             >
-                <Sidebar className='hidden md:block fixed z-10 w-[25%] h-screen' />
-                <div className='md:ml-[25%] w-full md:w-[75%]'>
-                    <Header className='fixed md:right-0 md:w-[75%]' />
+                <Sidebar className='hidden md:block fixed z-10 w-[25%] lg:w-[15%] h-screen' />
+                <div className='md:ml-[25%] lg:ml-[15%] w-full md:w-[75%] lg:w-[85%]'>
+                    <Header className='fixed md:right-0 md:w-[75%] lg:w-[85%]' />
                     <main className='w-full h-full flex items-center justify-center'>
                         {children}
                     </main>
