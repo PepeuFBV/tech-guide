@@ -3,6 +3,11 @@ import { Button } from '@/components/ui/button'
 import { SidebarButton } from '@/components/ui/sidebar-button'
 import { Divider } from '@/components/ui/divider'
 import Link from 'next/link'
+
+import { Ecosystem } from '@/components/ui/icons/ecosystem'
+import { ReactJS } from '@/components/ui/icons/reactjs'
+import { NextJS } from '@/components/ui/icons/nextjs'
+
 import { cn } from '@/utils/lib/tailwind-merge'
 
 interface SidebarProps {
@@ -27,13 +32,13 @@ const Sidebar: React.FC<SidebarProps> = ({ className }) => {
                     <Divider variant='horizontal' />
                 </div>
                 <div className='flex flex-col space-y-0'> {/* TODO: add subsections to each button */}
-                    <SidebarButton href='/'>
+                    <SidebarButton href='/' logo={<Ecosystem />}>
                         Ecosistema
                     </SidebarButton>
-                    <SidebarButton href='/react'>
+                    <SidebarButton href='/react' logo={<ReactJS />}>
                         React
                     </SidebarButton>
-                    <SidebarButton href='/next'>
+                    <SidebarButton href='/next' logo={<NextJS />}>
                         Next
                     </SidebarButton>
                 </div>
