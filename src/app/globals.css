@@ -36,6 +36,8 @@
     --sidebar-accent-foreground: #343434;
     --sidebar-border: #eaeaea;
     --sidebar-ring: #b4b4b4;
+    --sidebar-button: #ebebf599;
+    --sidebar-button-active: #a8b1ff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -53,7 +55,7 @@
     --muted: #454545;
     --muted-foreground: #b4b4b4;
     --accent: #454545;
-    --accent-foreground: #fcfcfc;
+    --accent-foreground: #fffff5db;
     --destructive: #993333;
     --destructive-foreground: #cc3d3d;
     --border: #454545;
@@ -72,6 +74,8 @@
     --sidebar-accent-foreground: #fcfcfc;
     --sidebar-border: #454545;
     --sidebar-ring: #707070;
+    --sidebar-button: #ebebf599;
+    --sidebar-button-active: #a8b1ff;
   }
 }
 

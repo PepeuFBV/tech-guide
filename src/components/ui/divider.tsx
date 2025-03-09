@@ -12,7 +12,7 @@ const Divider: React.FC<DividerProps> = ({ variant, className }) => {
         )
     } else if (variant === 'horizontal') {
         return (
-            <div className={cn('bg-secondary w-[30px] h-[1px]', className)} />
+            <div className={cn('bg-secondary w-[120px] h-[1px]', className)} />
         )
     } else if (variant === 'vertical') {
         return (

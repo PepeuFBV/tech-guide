@@ -42,6 +42,8 @@ export default {
                 'sidebar-accent-foreground': "var(--sidebar-accent-foreground)",
                 'sidebar-border': "var(--sidebar-border)",
                 'sidebar-ring': "var(--sidebar-ring)",
+                'sidebar-button': "var(--sidebar-button)",
+                'sidebar-button-active': "var(--sidebar-button-active)",
             },
         },
     },
