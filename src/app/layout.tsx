@@ -1,5 +1,5 @@
 import Header from '@/components/core/header'
-import Sidebar from '@/components/core/sidebar'
+import Sidebar from '@/components/core/sidebar/sidebar'
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'

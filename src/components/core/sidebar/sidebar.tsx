@@ -1,12 +1,10 @@
 import React from 'react'
 import { Button } from '@/components/ui/button'
-import { SidebarButton } from '@/components/ui/sidebar-button'
+import { SidebarGroup } from '@/components/core/sidebar/sidebar-group'
 import { Divider } from '@/components/ui/divider'
 import Link from 'next/link'
 
-import { Ecosystem } from '@/components/ui/icons/ecosystem'
-import { ReactJS } from '@/components/ui/icons/reactjs'
-import { NextJS } from '@/components/ui/icons/nextjs'
+import { sidebar } from '@/data/sidebar'
 
 import { cn } from '@/utils/lib/tailwind-merge'
 
@@ -14,9 +12,6 @@ interface SidebarProps {
     className?: string
 }
 const Sidebar: React.FC<SidebarProps> = ({ className }) => {
-
-
-
     return (
         <section className={cn('w-full bg-sidebar', className)}>
             <div className='mt-9 px-8 w-full h-full flex flex-col space-y-7'>
@@ -31,16 +26,10 @@ const Sidebar: React.FC<SidebarProps> = ({ className }) => {
                     </Link>
                     <Divider variant='horizontal' />
                 </div>
-                <div className='flex flex-col space-y-0'> {/* TODO: add subsections to each button */}
-                    <SidebarButton href='/' logo={<Ecosystem />}>
-                        Ecosistema
-                    </SidebarButton>
-                    <SidebarButton href='/react' logo={<ReactJS />}>
-                        React
-                    </SidebarButton>
-                    <SidebarButton href='/next' logo={<NextJS />}>
-                        Next
-                    </SidebarButton>
+                <div className='flex flex-col space-y-3'>
+                    {sidebar.map((group, index) => (
+                        <SidebarGroup key={index} {...group} />
+                    ))}
                 </div>
             </div>
         </section>
