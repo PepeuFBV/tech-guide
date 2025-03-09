@@ -1,8 +1,14 @@
 import React from 'react'
+import { cn } from '@/utils/lib/tailwind-merge'
 
-const Divider = () => {
+interface DividerProps {
+    className?: string
+    width?: number
+    height?: number
+}
+const Divider: React.FC<DividerProps> = ({ className, width = 5, height = 5 }) => {
     return (
-        <div className='w-[1px] h-[30px] bg-secondary' />
+        <div className={cn(`w-[${width}px] h-[${height}px] bg-secondary`, className)} />
     )
 }
 

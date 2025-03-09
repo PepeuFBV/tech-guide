@@ -37,9 +37,10 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
                         </div>
                     </Button>
                 </Link>
-                <Divider />
+                <Divider width={1} height={30} />
+                <Divider width={30} height={10} />
                 <LanguageSelector className='ml-2 mr-2 cursor-not-allowed' />
-                <Divider />
+                <Divider width={1} height={30} />
                 <Button variant='link' className='ml-2 p-2'>
                     <Github size={21} />
                 </Button>
