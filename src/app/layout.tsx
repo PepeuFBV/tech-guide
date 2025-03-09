@@ -1,4 +1,5 @@
 import Header from '@/components/core/Header'
+import Sidebar from '@/components/core/Sidebar'
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
@@ -35,10 +36,15 @@ export default function RootLayout({
                 <link rel='preload' href='/images/seed-a-bit-logo.svg' as='image' />
             </head>
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+                className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen w-full flex`}
             >
-                <Header />
-                {children}
+                <Sidebar className='hidden md:block fixed z-10 w-[25%] h-screen' />
+                <div className='md:ml-[25%] w-full md:w-[75%]'>
+                    <Header className='fixed md:right-0 md:w-[75%]' />
+                    <main className='w-full h-full flex items-center justify-center'>
+                        {children}
+                    </main>
+                </div>
             </body>
         </html>
     )

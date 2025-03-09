@@ -6,10 +6,14 @@ import Divider from '@/components/core/Header/Divider'
 import LanguageSelector from '@/components/core/Header/LanguageSelector'
 import { ArrowUpRight } from 'lucide-react'
 import { Github } from '@/components/core/Header/Github'
+import { cn } from '@/utils/lib/tailwind-merge'
 
-const Header = () => {
+interface HeaderProps {
+    className?: string
+}
+const Header: React.FC<HeaderProps> = ({ className }) => {
     return (
-        <header className='fixed z-50 top-0 h-20 w-full bg-background border-b border-b-black flex justify-end items-center px-6'>
+        <header className={cn('z-10 top-0 h-20 w-full bg-background border-b border-b-black flex justify-end items-center px-6', className)}>
             <div className='flex items-center gap-2 justify-center'>
                 <Link
                     href='https://seedabit.org.br'
