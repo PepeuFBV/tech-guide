@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
-import Divider from '@/components/ui/divider'
+import { Divider } from '@/components/ui/divider'
 import LanguageSelector from '@/components/core/language-selector'
 import { ArrowUpRight } from 'lucide-react'
 import { Github } from '@/components/ui/icons/github'
@@ -37,10 +37,9 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
                         </div>
                     </Button>
                 </Link>
-                <Divider width={1} height={30} />
-                <Divider width={30} height={10} />
+                <Divider variant='vertical' />
                 <LanguageSelector className='ml-2 mr-2 cursor-not-allowed' />
-                <Divider width={1} height={30} />
+                <Divider variant='vertical' />
                 <Button variant='link' className='ml-2 p-2'>
                     <Github size={21} />
                 </Button>
