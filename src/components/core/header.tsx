@@ -2,10 +2,10 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
-import Divider from '@/components/core/Header/Divider'
-import LanguageSelector from '@/components/core/Header/LanguageSelector'
+import Divider from '@/components/ui/divider'
+import LanguageSelector from '@/components/core/language-selector'
 import { ArrowUpRight } from 'lucide-react'
-import { Github } from '@/components/core/Header/Github'
+import { Github } from '@/components/ui/icons/github'
 import { cn } from '@/utils/lib/tailwind-merge'
 
 interface HeaderProps {
