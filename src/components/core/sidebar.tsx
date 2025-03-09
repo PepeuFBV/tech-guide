@@ -14,7 +14,7 @@ const Sidebar: React.FC<SidebarProps> = ({ className }) => {
 
     return (
         <section className={cn('w-full bg-sidebar', className)}>
-            <div className='mt-5 px-8 w-full h-full flex flex-col space-y-7'>
+            <div className='mt-9 px-8 w-full h-full flex flex-col space-y-7'>
                 <div className='flex flex-col space-y-1'>
                     <Link passHref href='/'>
                         <Button
