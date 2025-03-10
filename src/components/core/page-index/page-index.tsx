@@ -10,7 +10,7 @@ interface PageIndexProps {
 const PageIndex: React.FC<PageIndexProps> = ({ topics, className }) => {
 
     return (
-        <nav className={cn('h-full flex space-x-4 text-sm', className)}>
+        <nav className={cn('hidden md:flex fixed right-10 md:right-5 h-full space-x-4 text-sm', className)}>
             <div className='h-fit flex flex-col space-y-4 border-l-[1px] border-secondary pl-4 py-2'>
                 <h3 className='font-bold text-sidebar-button'>Tópicos</h3>
                 <ul className='flex flex-col space-y-0.5'>

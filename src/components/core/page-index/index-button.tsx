@@ -17,6 +17,7 @@ const IndexButton: React.FC<IndexButtonProps> = ({ href, children, className }) 
             className=''
             smooth={true}
             duration={500}
+            offset={-120}
             href={href}
         >
             <Button
