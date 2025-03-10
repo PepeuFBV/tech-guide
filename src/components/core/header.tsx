@@ -35,12 +35,10 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
                                 <ul className='col-span-1 flex flex-wrap space-y-3'>
                                     {sidebar.map((entry, index) => (
                                         <li key={index} className='flex-basis-1/2'>
-                                            <Link href={entry.href} passHref>
-                                                <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), 'gap-2')}>
-                                                    {entry.icon}
-                                                    <span>{entry.title}</span>
-                                                </NavigationMenuLink>
-                                            </Link>
+                                            <NavigationMenuLink href={entry.href} className={cn(navigationMenuTriggerStyle(), 'gap-2')}>
+                                                {entry.icon}
+                                                <span>{entry.title}</span>
+                                            </NavigationMenuLink>
                                         </li>
                                     ))}
                                 </ul>
