@@ -3,19 +3,84 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --background: #ffffff;
+    --foreground: #171717;
+    --card: #ffffff;
+    --card-foreground: #262626;
+    --popover: #ffffff;
+    --popover-foreground: #262626;
+    --primary: #343434;
+    --primary-foreground: #fcfcfc;
+    --secondary: #f7f7f7;
+    --secondary-foreground: #343434;
+    --muted: #f7f7f7;
+    --muted-foreground: #8e8e8e;
+    --accent: #f7f7f7;
+    --accent-foreground: #343434;
+    --destructive: #b72d2d;
+    --destructive-foreground: #b72d2d;
+    --border: #eaeaea;
+    --input: #eaeaea;
+    --ring: #b4b4b4;
+    --chart-1: #ff8a00;
+    --chart-2: #0092cc;
+    --chart-3: #5151d6;
+    --chart-4: #d7ff00;
+    --chart-5: #c2f700;
+    --radius: 0.625rem;
+    --sidebar: #fcfcfc;
+    --sidebar-foreground: #262626;
+    --sidebar-primary: #343434;
+    --sidebar-primary-foreground: #fcfcfc;
+    --sidebar-accent: #f7f7f7;
+    --sidebar-accent-foreground: #343434;
+    --sidebar-border: #eaeaea;
+    --sidebar-ring: #b4b4b4;
+    --sidebar-button: #ebebf599;
+    --sidebar-button-active: #a8b1ff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #1b1b1f;
     --foreground: #ededed;
+    --card: #262626;
+    --card-foreground: #fcfcfc;
+    --popover: #262626;
+    --popover-foreground: #fcfcfc;
+    --primary: #fcfcfc;
+    --primary-foreground: #161618;
+    --secondary: #a1a1aa;
+    --secondary-foreground: #fcfcfc;
+    --muted: #454545;
+    --muted-foreground: #b4b4b4;
+    --accent: #454545;
+    --accent-foreground: #fffff5db;
+    --destructive: #993333;
+    --destructive-foreground: #cc3d3d;
+    --border: #353535;
+    --input: #454545;
+    --ring: #707070;
+    --chart-1: #6a00ff;
+    --chart-2: #00cc66;
+    --chart-3: #c2f700;
+    --chart-4: #7e00d6;
+    --chart-5: #c88000;
+    --sidebar: #161618;
+    --sidebar-foreground: #fcfcfc;
+    --sidebar-primary: #6a00ff;
+    --sidebar-primary-foreground: #fcfcfc;
+    --sidebar-accent: #454545;
+    --sidebar-accent-foreground: #fcfcfc;
+    --sidebar-border: #454545;
+    --sidebar-ring: #707070;
+    --sidebar-button: #ebebf599;
+    --sidebar-button-active: #a8b1ff;
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
