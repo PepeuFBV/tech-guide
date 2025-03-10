@@ -34,8 +34,8 @@ const sidebar: SidebarEntry[] = [
                 href: '/tailwind',
             },
             {
-                title: 'Jest',
-                href: '/jest',
+                title: 'ESLint',
+                href: '/eslint',
             }
         ],
     },
@@ -44,22 +44,22 @@ const sidebar: SidebarEntry[] = [
         href: '/react/introduction',
         icon: <ReactJS />,
         items: [
-            // {
-            //     title: 'Introduction',
-            //     href: '/react/introduction',
-            // },
-            // {
-            //     title: 'Installation',
-            //     href: '/react/installation',
-            // },
-            // {
-            //     title: 'Configuration',
-            //     href: '/react/configuration',
-            // },
-            // {
-            //     title: 'Features',
-            //     href: '/react/features',
-            // },
+            {
+                title: 'Introduction',
+                href: '/react/introduction',
+            },
+            {
+                title: 'Installation',
+                href: '/react/installation',
+            },
+            {
+                title: 'Configuration',
+                href: '/react/configuration',
+            },
+            {
+                title: 'Features',
+                href: '/react/features',
+            },
         ],
     },
     {
@@ -67,22 +67,22 @@ const sidebar: SidebarEntry[] = [
         href: '/next/introduction',
         icon: <NextJS />,
         items: [
-            // {
-            //     title: 'Introduction',
-            //     href: '/next/introduction',
-            // },
-            // {
-            //     title: 'Installation',
-            //     href: '/next/installation',
-            // },
-            // {
-            //     title: 'Configuration',
-            //     href: '/next/configuration',
-            // },
-            // {
-            //     title: 'Features',
-            //     href: '/next/features',
-            // },
+            {
+                title: 'Introduction',
+                href: '/next/introduction',
+            },
+            {
+                title: 'Installation',
+                href: '/next/installation',
+            },
+            {
+                title: 'Configuration',
+                href: '/next/configuration',
+            },
+            {
+                title: 'Features',
+                href: '/next/features',
+            },
         ],
     }
 ]
