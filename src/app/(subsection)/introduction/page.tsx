@@ -15,7 +15,7 @@ export default function Introduction() {
             <div className='w-[75%] lg:w-[80%] flex flex-col justify-center space-y-10 px-3 md:px-10'>
                 <h1 className='text-4xl'>Introdução</h1>
             </div>
-            <PageIndex topics={topics} className='fixed right-10 md:right-0 w-[20%] lg:w-[15%]' />
+            <PageIndex topics={topics} className='w-[20%] lg:w-[15%]' />
         </div>
     )
 }
