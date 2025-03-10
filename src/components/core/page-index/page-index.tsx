@@ -15,8 +15,8 @@ const PageIndex: React.FC<PageIndexProps> = ({ topics, className }) => {
                 <h3 className='font-bold text-sidebar-button'>Tópicos</h3>
                 <ul className='flex flex-col space-y-0.5'>
                     {topics.map((topic, key) => (
-                        <li>
-                            <IndexButton key={key} href={topic.href}>
+                        <li key={key}>
+                            <IndexButton href={topic.href}>
                                 {topic.title}
                             </IndexButton>
                         </li>
