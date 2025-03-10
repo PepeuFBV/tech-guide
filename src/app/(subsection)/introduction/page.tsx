@@ -16,31 +16,36 @@ const topics: Topic[] = [
     { title: 'Configuration', href: '#configuration' },
 ]
 
-const tech: { title: string, description: string, icon?: React.ReactNode }[] = [
+const tech: { title: string, description: string, icon?: React.ReactNode, href: string }[] = [
     {
         title: 'Typescript',
         description: 'JavaScript tipado a nível de produção',
         icon: <Typescript />,
+        href: '/typescript',
     },
     {
         title: 'TailwindCSS',
         description: 'Um framework CSS proporcionando rápidez',
         icon: <TailwindCSS />,
+        href: '/tailwindcss',
     },
     {
         title: 'EsLint',
         description: 'Encontre e corrija problemas no seu código',
         icon: <EsLint />,
+        href: '/eslint',
     },
     {
         title: 'React',
         description: 'Uma biblioteca JavaScript para criar interfaces de usuário',
         icon: <ReactJS />,
+        href: '/react/introduction',
     },
     {
         title: 'Next.js',
         description: 'O framework React para produção',
         icon: <NextJS />,
+        href: '/nextjs/introduction',
     },
 ]
 
@@ -50,12 +55,12 @@ export default function Introduction() {
             <div className='md:w-[75%] lg:w-[80%] flex flex-col justify-center space-y-10 px-3 md:px-10'>
                 <div className='flex flex-col space-y-8'>
                     <div className='flex flex-col space-y-2'>
-                        <h1 className='text-4xl'>Como começar</h1>
-                        <p>O ecossistema que será usado no final do guia contém algumas das tecnologias mais utilizadas no mercado.</p>
+                        <h1 className='text-4xl'>Techstack</h1>
+                        <p>As tecnologias que serão usadas no ecossistema no final do guia contém algumas das tecnologias mais utilizadas no mercado.</p>
                     </div>
                     <div className='grid col-span-1 md:col-span-2 xl:grid-cols-3 gap-4'>
                         {tech.map((tech, index) => (
-                            <TechCard key={index} title={tech.title} description={tech.description} icon={tech.icon} />
+                            <TechCard key={index} title={tech.title} description={tech.description} icon={tech.icon} href={tech.href} />
                         ))}
                     </div>
                 </div>
