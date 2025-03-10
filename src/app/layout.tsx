@@ -1,16 +1,11 @@
 import Header from '@/components/core/header'
 import Sidebar from '@/components/core/sidebar/sidebar'
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Nunito } from 'next/font/google'
 import './globals.css'
 
-const geistSans = Geist({
-    variable: '--font-geist-sans',
-    subsets: ['latin'],
-})
-
-const geistMono = Geist_Mono({
-    variable: '--font-geist-mono',
+const nunito = Nunito({
+    variable: '--font-nunito',
     subsets: ['latin'],
 })
 
@@ -36,7 +31,7 @@ export default function RootLayout({
                 <link rel='preload' href='/images/seed-a-bit-logo.svg' as='image' />
             </head>
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased h-full w-full flex`}
+                className={`${nunito.variable} antialiased`}
             >
                 <Sidebar className='hidden md:block fixed z-10 md:w-[25%] lg:w-[20%] h-screen' />
                 <div className='md:ml-[25%] lg:ml-[20%] w-full md:w-[75%] lg:w-[80%]'>
