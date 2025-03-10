@@ -15,11 +15,11 @@ const Sidebar: React.FC<SidebarProps> = ({ className }) => {
     return (
         <section className={cn('w-full bg-sidebar', className)}>
             <div className='mt-9 px-8 w-full h-full flex flex-col space-y-7'>
-                <div className='flex flex-col space-y-1'>
+                <div className='flex flex-col md:space-y-1'>
                     <Link passHref href='/'>
                         <Button
                             variant='link'
-                            className='w-fit px-2 text-base font-bold text-accent-foreground hover:no-underline'
+                            className='w-fit px-2 text-base text-wrap font-bold text-accent-foreground hover:no-underline'
                         >
                             React and Next Guide
                         </Button>

@@ -33,10 +33,10 @@ export default function RootLayout({
             <body
                 className={`${nunito.variable} antialiased`}
             >
-                <Sidebar className='hidden md:block fixed z-10 md:w-[25%] lg:w-[20%] h-screen' />
+                <Sidebar className='hidden md:block fixed top-0 z-10 md:w-[25%] lg:w-[20%] h-[100vh]' />
                 <div className='md:ml-[25%] lg:ml-[20%] w-full md:w-[75%] lg:w-[80%]'>
                     <Header className='fixed md:right-0 md:w-[75%] lg:w-[80%]' />
-                    <main className='mt-24 w-full h-full flex items-center justify-center p-10'>
+                    <main className='mt-20 w-full h-full flex items-center justify-center p-10'>
                         {children}
                     </main>
                 </div>
