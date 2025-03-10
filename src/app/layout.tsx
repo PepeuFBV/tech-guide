@@ -41,7 +41,7 @@ export default function RootLayout({
                 <Sidebar className='hidden md:block fixed z-10 md:w-[25%] lg:w-[20%] h-screen' />
                 <div className='md:ml-[25%] lg:ml-[20%] w-full md:w-[75%] lg:w-[80%]'>
                     <Header className='fixed md:right-0 md:w-[75%] lg:w-[80%]' />
-                    <main className='w-full h-full flex items-center justify-center'>
+                    <main className='mt-20 w-full h-full flex items-center justify-center p-10'>
                         {children}
                     </main>
                 </div>
