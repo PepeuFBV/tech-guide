@@ -38,7 +38,7 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
                                             <Link href={entry.href} passHref>
                                                 <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), 'gap-2')}>
                                                     {entry.icon}
-                                                    {entry.title}
+                                                    <span>{entry.title}</span>
                                                 </NavigationMenuLink>
                                             </Link>
                                         </li>
