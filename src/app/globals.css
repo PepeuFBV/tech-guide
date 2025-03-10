@@ -50,7 +50,7 @@
     --popover-foreground: #fcfcfc;
     --primary: #fcfcfc;
     --primary-foreground: #161618;
-    --secondary: #454545;
+    --secondary: #a1a1aa;
     --secondary-foreground: #fcfcfc;
     --muted: #454545;
     --muted-foreground: #b4b4b4;
@@ -58,7 +58,7 @@
     --accent-foreground: #fffff5db;
     --destructive: #993333;
     --destructive-foreground: #cc3d3d;
-    --border: #454545;
+    --border: #353535;
     --input: #454545;
     --ring: #707070;
     --chart-1: #6a00ff;
