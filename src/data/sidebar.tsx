@@ -10,7 +10,7 @@ const sidebar: SidebarEntry[] = [
         icon: <Ecosystem />,
         items: [
             {
-                title: 'Introdução',
+                title: 'Introdução e instalação',
                 href: '/introduction',
             },
             {
