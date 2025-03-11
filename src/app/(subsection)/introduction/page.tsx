@@ -4,6 +4,7 @@ import PathDisplay from '@/components/core/path-display'
 import VisitLink from '@/components/ui/visit-link'
 import { TechCard } from '@/components/ui/tech-card'
 import { Divider } from '@/components/ui/divider'
+import { NodeJS } from '@/components/ui/icons/node'
 import { NextJS } from '@/components/ui/icons/nextjs'
 import { ReactJS } from '@/components/ui/icons/reactjs'
 import { Typescript } from '@/components/ui/icons/typescript'
@@ -41,6 +42,12 @@ const tech: { title: string, description: string, icon?: React.ReactNode, href: 
         description: 'Prevenção de commits ruins',
         icon: <Husky />,
         href: '/husky',
+    },
+    {
+        title: 'Node.js',
+        description: 'JavaScript no lado do servidor',
+        icon: <NodeJS />,
+        href: '/nodejs',
     },
     {
         title: 'React',

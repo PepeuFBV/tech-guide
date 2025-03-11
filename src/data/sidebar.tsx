@@ -14,12 +14,8 @@ const sidebar: SidebarEntry[] = [
                 href: '/introduction',
             },
             {
-                title: 'Configuração',
-                href: '/configuration',
-            },
-            {
-                title: 'Features',
-                href: '/features',
+                title: 'Node',
+                href: '/node',
             },
             {
                 title: 'Typescript',
