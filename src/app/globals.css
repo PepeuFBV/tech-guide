@@ -38,6 +38,7 @@
     --sidebar-ring: #b4b4b4;
     --sidebar-button: #ebebf599;
     --sidebar-button-active: #a8b1ff;
+    --code-background: #282c34;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -76,6 +77,7 @@
     --sidebar-ring: #707070;
     --sidebar-button: #ebebf599;
     --sidebar-button-active: #a8b1ff;
+    --code-background: #1b1b1f;
   }
 }
 
