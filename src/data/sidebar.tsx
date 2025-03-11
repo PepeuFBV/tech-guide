@@ -5,7 +5,7 @@ import { NextJS } from '@/components/ui/icons/nextjs'
 
 const sidebar: SidebarEntry[] = [
     {
-        title: 'Ecosystem',
+        title: 'Ecossistema',
         href: '/introduction',
         icon: <Ecosystem />,
         items: [
