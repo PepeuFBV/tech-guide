@@ -1,4 +1,4 @@
-import type { SidebarEntry, SidebarItem } from '@/types/sidebar'
+import type { SidebarEntry } from '@/types/sidebar'
 import { Ecosystem } from '@/components/ui/icons/ecosystem'
 import { ReactJS } from '@/components/ui/icons/reactjs'
 import { NextJS } from '@/components/ui/icons/nextjs'
@@ -10,15 +10,11 @@ const sidebar: SidebarEntry[] = [
         icon: <Ecosystem />,
         items: [
             {
-                title: 'Introduction',
+                title: 'Introdução',
                 href: '/introduction',
             },
             {
-                title: 'Installation',
-                href: '/installation',
-            },
-            {
-                title: 'Configuration',
+                title: 'Configuração',
                 href: '/configuration',
             },
             {
@@ -45,15 +41,15 @@ const sidebar: SidebarEntry[] = [
         icon: <ReactJS />,
         items: [
             {
-                title: 'Introduction',
+                title: 'Introdução',
                 href: '/react/introduction',
             },
             {
-                title: 'Installation',
+                title: 'Instalação',
                 href: '/react/installation',
             },
             {
-                title: 'Configuration',
+                title: 'Configuração',
                 href: '/react/configuration',
             },
             {
@@ -68,15 +64,15 @@ const sidebar: SidebarEntry[] = [
         icon: <NextJS />,
         items: [
             {
-                title: 'Introduction',
+                title: 'Introdução',
                 href: '/next/introduction',
             },
             {
-                title: 'Installation',
+                title: 'Instalação',
                 href: '/next/installation',
             },
             {
-                title: 'Configuration',
+                title: 'Configuração',
                 href: '/next/configuration',
             },
             {
