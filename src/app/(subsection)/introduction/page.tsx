@@ -37,6 +37,12 @@ const tech: { title: string, description: string, icon?: React.ReactNode, href: 
         href: '/eslint',
     },
     {
+        title: 'Husky',
+        description: 'Prevenção de commits ruins',
+        icon: <Husky />,
+        href: '/husky',
+    },
+    {
         title: 'React',
         description: 'Uma biblioteca JavaScript para criar interfaces de usuário',
         icon: <ReactJS />,

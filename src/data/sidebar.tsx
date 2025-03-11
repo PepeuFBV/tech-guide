@@ -32,6 +32,10 @@ const sidebar: SidebarEntry[] = [
             {
                 title: 'ESLint',
                 href: '/eslint',
+            },
+            {
+                title: 'Husky',
+                href: '/husky',
             }
         ],
     },
