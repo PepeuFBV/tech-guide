@@ -8,12 +8,13 @@ import { sidebar } from '@/data/sidebar'
 
 import { cn } from '@/utils/lib/tailwind-merge'
 
+
 interface SidebarProps {
     className?: string
 }
-const Sidebar: React.FC<SidebarProps> = ({ className }) => {
+const Sidebar: React.FC<SidebarProps> = ({ className }) => { // sidebar class for the sidebar scroll style
     return (
-        <section className={cn('w-full bg-sidebar', className)}>
+        <section className={cn('w-full bg-sidebar overflow-y-scroll sidebar', className)}>
             <div className='mt-9 px-8 w-full h-full flex flex-col space-y-7'>
                 <div className='flex flex-col md:space-y-1'>
                     <Link passHref href='/'>
