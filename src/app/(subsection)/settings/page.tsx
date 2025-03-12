@@ -72,6 +72,7 @@ export default function Settings() {
                             <li><code>types</code>: Arquivos <code>ts</code> ou <code>tsx</code> que descrevem os tipos para os dados.</li>
                             <li><code>utils</code>: Onde ficam as funções de utilidade interna comuns da aplicação, caso haja a interação com bibliotecas, se pode utilizar o subdiretório <code>lib</code>.</li>
                         </ul>
+                        <p className='text-secondary'>Versões antigas do Next utilizavam outra organização de diretórios na pasta <code>app</code>, <code>pages</code> era um diretório comum em que seriam organizadas as suas páginas para roteamento.</p>
                     </div>
                     <Divider variant='horizontal' color='secondary' className='w-full' />
                     <div className='flex flex-col space-y-4'>
