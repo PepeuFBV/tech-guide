@@ -17,26 +17,31 @@ const sidebar: SidebarEntry[] = [
             },
             {
                 id: 1,
+                title: 'Configurações e Diretórios',
+                href: '/settings',
+            },
+            {
+                id: 2,
                 title: 'Node',
                 href: '/node',
             },
             {
-                id: 2,
+                id: 3,
                 title: 'Typescript',
                 href: '/typescript',
             },
             {
-                id: 3,
+                id: 4,
                 title: 'Tailwind',
                 href: '/tailwind',
             },
             {
-                id: 4,
+                id: 5,
                 title: 'ESLint',
                 href: '/eslint',
             },
             {
-                id: 5,
+                id: 6,
                 title: 'Husky',
                 href: '/husky',
             }
@@ -49,22 +54,22 @@ const sidebar: SidebarEntry[] = [
         icon: <ReactJS />,
         items: [
             {
-                id: 6,
+                id: 7,
                 title: 'Introdução',
                 href: '/react/introduction',
             },
             {
-                id: 7,
+                id: 8,
                 title: 'Instalação',
                 href: '/react/installation',
             },
             {
-                id: 8,
+                id: 9,
                 title: 'Configuração',
                 href: '/react/configuration',
             },
             {
-                id: 9,
+                id: 10,
                 title: 'Features',
                 href: '/react/features',
             },
@@ -77,22 +82,22 @@ const sidebar: SidebarEntry[] = [
         icon: <NextJS />,
         items: [
             {
-                id: 10,
+                id: 11,
                 title: 'Introdução',
                 href: '/next/introduction',
             },
             {
-                id: 11,
+                id: 12,
                 title: 'Instalação',
                 href: '/next/installation',
             },
             {
-                id: 12,
+                id: 13,
                 title: 'Configuração',
                 href: '/next/configuration',
             },
             {
-                id: 13,
+                id: 14,
                 title: 'Features',
                 href: '/next/features',
             },
