@@ -8,7 +8,6 @@ import { sidebar } from '@/data/sidebar'
 
 import { cn } from '@/utils/lib/tailwind-merge'
 
-
 interface SidebarProps {
     className?: string
 }
