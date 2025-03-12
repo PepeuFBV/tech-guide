@@ -1,7 +1,6 @@
 import React from 'react'
 import PageIndex from '@/components/core/page-index/page-index'
 import PathDisplay from '@/components/core/path-display'
-import VisitLink from '@/components/ui/visit-link'
 import { Divider } from '@/components/ui/divider'
 import { CodeArea } from '@/components/ui/code-area'
 import type { Topic } from '@/types/topic'

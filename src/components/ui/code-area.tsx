@@ -5,8 +5,7 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { Clipboard } from 'lucide-react'
 
-const possibleLanguages = ['bash', 'json', 'typescript', 'tsx', 'css', 'html'] as const
-type Language = typeof possibleLanguages[number]
+type Language = 'bash' | 'json' | 'typescript' | 'tsx' | 'css' | 'html'
 
 interface CodeAreaProps {
     title?: string
