@@ -1,4 +1,5 @@
 import Header from '@/components/core/header'
+import Footer from '@/components/core/footer'
 import Sidebar from '@/components/core/sidebar/sidebar'
 import type { Metadata } from 'next'
 import { Nunito } from 'next/font/google'
@@ -39,6 +40,7 @@ export default function RootLayout({
                     <main className='mt-20 w-full h-full flex items-center justify-center p-10'>
                         {children}
                     </main>
+                    <Footer className='mt-10 mb-20 w-full' />
                 </div>
             </body>
         </html>
