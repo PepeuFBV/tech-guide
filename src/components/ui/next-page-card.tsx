@@ -49,16 +49,14 @@ const PageCard: React.FC<PageCardProps> = ({ previous = false, className }) => {
     const flexDirection: string = previous ? 'items-start' : 'items-end'
 
     return (
-        <div className='mx-10'>
-            <Link href={href} className='text-sidebar-button-active' onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}>
-                <div className={cn('w-48 flex items-center justify-between px-6 py-4 border border-muted rounded-lg shadow-md', className)}>
-                    <div className={cn('w-full flex flex-col space-y-1', flexDirection)}>
-                        <p className='text-xs font-bold text-secondary '>{title}</p>
-                        <p className={isHover ? 'underline' : ''}>{pageTitle}</p>
-                    </div>
+        <Link href={href} className='text-sidebar-button-active' onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}>
+            <div className={cn('w-40 md:w-48 flex items-center justify-between px-6 py-4 border border-muted rounded-lg shadow-md', className)}>
+                <div className={cn('w-full flex flex-col space-y-1', flexDirection)}>
+                    <p className='text-xs font-bold text-secondary '>{title}</p>
+                    <p className={isHover ? 'underline' : ''}>{pageTitle}</p>
                 </div>
-            </Link>
-        </div>
+            </div>
+        </Link>
     )
 }
 

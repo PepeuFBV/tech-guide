@@ -27,10 +27,12 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
     const justifyContent: string = checkForBothPages()
 
     return (
-        <footer className={cn('md:w-[75%] lg:w-[80%] bottom-0 h-20 bg-background flex items-center px-6', justifyContent, className)} >
-            <PageCard previous />
-            <PageCard />
-        </footer >
+        <footer className={cn('w-full md:w-[75%] lg:w-[80%] bottom-0 h-32 md:h-20 bg-background px-3 md:px-10', justifyContent, className)}>
+            <div className='w-full flex flex-wrap gap-3 items-center justify-between px-3 md:px-6'>
+                <PageCard previous />
+                <PageCard />
+            </div>
+        </footer>
     )
 }
 
