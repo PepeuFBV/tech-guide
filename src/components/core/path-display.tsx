@@ -13,7 +13,6 @@ const PathDisplay = () => {
     function getNames(pathname: string): string[] {
         const allPaths: SidebarItem[] = sidebar.flatMap(entry => entry.items).filter(item => item !== undefined)
         const currentEntry: SidebarItem | undefined = allPaths.find(entry => entry.href === pathname)
-        console.log(currentEntry)
         return currentEntry ? [currentEntry.title] : []
     }
 
