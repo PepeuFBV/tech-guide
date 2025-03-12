@@ -38,7 +38,7 @@ const PathDisplay = () => {
                 const isCurrent = index === names.length - 1
                 return (
                     <React.Fragment key={index}>
-                        <Link href={currentName} className={isCurrent ? 'text-primary hover:text-secondary' : 'text-secondary capitalize'}>
+                        <Link href={currentName} className={isCurrent ? 'text-primary hover:text-secondary capitalize' : 'text-secondary capitalize'}>
                             {ptbrMapping[name] || name}
                         </Link>
                         {index < names.length - 1 && <ChevronRight />}
