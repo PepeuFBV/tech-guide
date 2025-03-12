@@ -120,7 +120,7 @@ export default function Settings() {
                             <p>De começo, podemos definir um nome para nosso projeto no arquivo <code>package.json</code>, além de definir uma versão inicial para a aplicação.</p>
                             <p className='text-secondary'>A versão inicial é importante para que possamos controlar as versões da aplicação, além de ser um padrão de mercado. Recomendamos a utilização de <code>1.0.0-SNAPSHOT</code> para a primeira versão.</p>
                         </div>
-                        <CodeArea title='package.json' code={code[0]} language='json' />
+                        <CodeArea title='package.json' downloadLink='/files/package.json' code={code[0]} language='json' />
                     </div>
                 </div>
             </div>
