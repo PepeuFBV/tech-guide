@@ -4,6 +4,7 @@ import PathDisplay from '@/components/core/path-display'
 import { Divider } from '@/components/ui/divider'
 import { CodeArea } from '@/components/ui/code-area'
 import type { Topic } from '@/types/topic'
+import VisitLink from '@/components/ui/visit-link'
 
 const topics: Topic[] = [
     { title: 'Introdução', href: 'introduction' },
@@ -121,6 +122,7 @@ export default function Settings() {
                             <p className='text-secondary'>A versão inicial é importante para que possamos controlar as versões da aplicação, além de ser um padrão de mercado. Recomendamos a utilização de <code>1.0.0-SNAPSHOT</code> para a primeira versão.</p>
                         </div>
                         <CodeArea title='package.json' downloadLink='/files/package.json' code={code[0]} language='json' />
+                        <p className='text-secondary'>Mais detalhes desse arquivo poderão ser encontradas em <VisitLink href='/node'>Node</VisitLink> e em outras páginas deste guia.</p>
                     </div>
                 </div>
             </div>
