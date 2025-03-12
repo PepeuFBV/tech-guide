@@ -3,22 +3,21 @@
 import React from 'react'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
-import { getPathnameNames } from '@/utils/string'
 import { ChevronRight } from 'lucide-react'
-
-const ptbrMapping: { [key: string]: string } = {
-    'introduction': 'Introdução',
-    'installation': 'Instalação',
-    'configuration': 'Configuração',
-    'features': 'Features',
-    'typescript': 'Typescript',
-    'tailwind': 'Tailwind',
-    'eslint': 'ESLint',
-}
+import { SidebarItem } from '@/types/sidebar'
+import { sidebar } from '@/data/sidebar'
 
 const PathDisplay = () => {
     const pathname: string = usePathname()
-    const names: string[] = getPathnameNames(pathname)
+
+    function getNames(pathname: string): string[] {
+        const allPaths: SidebarItem[] = sidebar.flatMap(entry => entry.items).filter(item => item !== undefined)
+        const currentEntry: SidebarItem | undefined = allPaths.find(entry => entry.href === pathname)
+        console.log(currentEntry)
+        return currentEntry ? [currentEntry.title] : []
+    }
+
+    const names: string[] = getNames(pathname)
     if (names.length === 0) return null
 
     let currentName: string = ''
@@ -38,8 +37,8 @@ const PathDisplay = () => {
                 const isCurrent = index === names.length - 1
                 return (
                     <React.Fragment key={index}>
-                        <Link href={currentName} className={isCurrent ? 'text-primary hover:text-secondary capitalize' : 'text-secondary capitalize'}>
-                            {ptbrMapping[name] || name}
+                        <Link href={currentName} className={isCurrent ? 'text-primary hover:text-secondary' : 'text-secondary'}>
+                            {name}
                         </Link>
                         {index < names.length - 1 && <ChevronRight />}
                     </React.Fragment>
