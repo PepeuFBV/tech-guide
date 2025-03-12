@@ -13,6 +13,45 @@ const topics: Topic[] = [
 ]
 
 export default function Settings() {
+
+    const code: string[] = [`{
+    "name": "nextjs-react-typescript", //<-- Nome do projeto
+    "version": "0.1.0", //<-- Versão do projeto
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "clean-dev": "rmdir /s /q .next && npm run dev",
+        "clean-build": "rmdir /s /q .next && npm run build",
+        "clean-install": "rmdir /s /q node_modules && npm ci",
+        "prepare": "husky"
+    },
+    "dependencies": {
+        "clsx": "^2.1.1",
+        "next": "15.1.7",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
+        "tailwind-merge": "^3.0.2"
+    },
+    "devDependencies": {
+        "@babel/preset-env": "^7.26.9",
+        "@babel/preset-react": "^7.26.3",
+        "@babel/preset-typescript": "^7.26.0",
+        "@eslint/eslintrc": "^3",
+        "@types/node": "^20",
+        "@types/react": "^19",
+        "@types/react-dom": "^19",
+        "eslint": "^9",
+        "eslint-config-next": "15.1.7",
+        "husky": "^9.1.7",
+        "postcss": "^8",
+        "tailwindcss": "^3.4.1",
+        "typescript": "^5"
+    }
+}`]
+
     return (
         <div className='w-full h-full flex items-start justify-start md:space-x-10'>
             <div className='w-full md:w-[75%] lg:w-[80%] mt-5 md:mt-0 flex flex-col justify-center space-y-3 px-3 md:px-10'>
@@ -75,9 +114,14 @@ export default function Settings() {
                         <p className='text-secondary'>Versões antigas do Next utilizavam outra organização de diretórios na pasta <code>app</code>, <code>pages</code> era um diretório comum em que seriam organizadas as suas páginas para roteamento.</p>
                     </div>
                     <Divider variant='horizontal' color='secondary' className='w-full' />
-                    <div className='flex flex-col space-y-4'>
-                        <h1 id='settings' className='text-4xl'>Configurações</h1>
-                        <p>Por enquanto, ainda não mexeremos com arquivos de configuração do projeto, as configurações serão abordadas em suas respectivas seções.</p>
+                    <div className='flex flex-col space-y-6'>
+                        <div className='flex flex-col space-y-4'>
+                            <h1 id='settings' className='text-4xl'>Configurações</h1>
+                            <p>Por enquanto, ainda não mexeremos com arquivos de configuração a fundo, as configurações serão melhor abordadas em suas respectivas seções.</p>
+                            <p>De começo, podemos definir um nome para nosso projeto no arquivo <code>package.json</code>, além de definir uma versão inicial para a aplicação.</p>
+                            <p className='text-secondary'>A versão inicial é importante para que possamos controlar as versões da aplicação, além de ser um padrão de mercado. Recomendamos a utilização de <code>1.0.0-SNAPSHOT</code> para a primeira versão.</p>
+                        </div>
+                        <CodeArea title='package.json' code={code[0]} language='json' />
                     </div>
                 </div>
             </div>
