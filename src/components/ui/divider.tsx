@@ -6,7 +6,6 @@ interface DividerProps {
     color?: 'default' | 'secondary'
     className?: string
 }
-
 const Divider: React.FC<DividerProps> = ({ variant, color = 'default', className }) => {
     const colorClass = color === 'secondary' ? 'bg-border' : 'bg-secondary'
 

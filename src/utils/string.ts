@@ -16,4 +16,23 @@ function getFirstNameFromPathname(pathname: string): string {
     return '/' + pathname.substring(1).split('/')[0]
 }
 
-export { getFirstNameFromPathname }
+function getPathnameNames(pathname: string): string[] {
+    /**
+     * Returns the names from a given pathname.
+     * 
+     * @abstract
+     * Removes the first '/' from the pathname and splits the pathname by '/', returning all elements except the first one.
+     * 
+     * @example
+     * getPathnameNames('/react/nextjs') // ['react', 'nextjs']
+     * getPathnameNames('/react') // ['react']
+     * getPathnameNames('/') // []
+     * 
+     * @param {string}
+     * 
+     * @returns {string[]} The names from the pathname.
+     */
+    return pathname.substring(1).split('/')
+}
+
+export { getFirstNameFromPathname, getPathnameNames }

@@ -14,8 +14,8 @@ const sidebarVariants = cva(
     {
         variants: {
             variant: {
-                title: 'font-bold text-base',
-                subtitle: 'font-thin text-sm',
+                title: 'text-wrap text-start font-bold text-base',
+                subtitle: 'text-wrap text-start font-thin text-sm',
             },
         },
         defaultVariants: {
@@ -44,13 +44,14 @@ const SidebarButton: React.FC<SidebarButtonProps> = ({ variant, href, icon, chil
             <Button
                 variant='sidebar'
                 size='sidebar'
-                className={cn(sidebarVariants({ variant }), isActive ? 'text-sidebar-button-active' : 'text-sidebar-button', className)}
+                className={cn(sidebarVariants({ variant }), isActive ? 'text-sidebar-button-active' : 'text-sidebar-button', className)
+                }
                 {...props}
             >
                 {icon}
                 {children}
             </Button>
-        </Link>
+        </Link >
     )
 }
 

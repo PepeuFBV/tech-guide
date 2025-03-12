@@ -4,6 +4,7 @@ import React from 'react'
 import { Button } from '@/components/ui/button'
 import { Link } from 'react-scroll'
 import { cn } from '@/utils/lib/tailwind-merge'
+import './active-button.css'
 
 interface IndexButtonProps {
     href: string
@@ -13,10 +14,13 @@ interface IndexButtonProps {
 const IndexButton: React.FC<IndexButtonProps> = ({ href, children, className }) => {
     return (
         <Link
+            className='pl-3'
+            activeClass='active'
+            spy
             to={href}
-            className=''
-            smooth={true}
-            duration={500}
+            smooth
+            duration={1000}
+            offset={-120}
             href={href}
         >
             <Button

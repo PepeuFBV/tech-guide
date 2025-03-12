@@ -44,6 +44,7 @@ export default {
                 'sidebar-ring': "var(--sidebar-ring)",
                 'sidebar-button': "var(--sidebar-button)",
                 'sidebar-button-active': "var(--sidebar-button-active)",
+                '--code-background': "var(--code-background)",
             },
         },
     },

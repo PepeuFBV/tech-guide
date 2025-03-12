@@ -38,6 +38,7 @@
     --sidebar-ring: #b4b4b4;
     --sidebar-button: #ebebf599;
     --sidebar-button-active: #a8b1ff;
+    --code-background: #282c34;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -76,7 +77,42 @@
     --sidebar-ring: #707070;
     --sidebar-button: #ebebf599;
     --sidebar-button-active: #a8b1ff;
+    --code-background: #1b1b1f;
   }
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1b1b1f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 4px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: #161618;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #5a5a5a;
+    border-radius: 7px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 body {
