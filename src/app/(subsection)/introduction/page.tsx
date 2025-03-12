@@ -74,8 +74,8 @@ npm install`
     ]
 
     return (
-        <div className='w-full h-full flex items-start justify-start space-x-10'>
-            <div className='md:w-[75%] lg:w-[80%] flex flex-col justify-center space-y-7 px-3 md:px-10'>
+        <div className='w-full h-full flex items-start justify-start md:space-x-10'>
+            <div className='w-full md:w-[75%] lg:w-[80%] mt-5 md:mt-0 flex flex-col justify-center space-y-3 px-3 md:px-10'>
                 <PathDisplay />
                 <div className='flex flex-col space-y-10'>
                     <div className='flex flex-col space-y-4'>

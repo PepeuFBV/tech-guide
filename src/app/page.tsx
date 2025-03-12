@@ -12,12 +12,12 @@ const topics: Topic[] = [
 
 export default function Home() {
     return (
-        <div className='w-full h-full flex items-start justify-start space-x-10'>
-            <div className='md:w-[75%] lg:w-[80%] flex flex-col justify-center space-y-10 px-3 md:px-10'>
+        <div className='w-full h-full flex items-start justify-start md:space-x-10'>
+            <div className='w-full md:w-[75%] lg:w-[80%] mt-5 md:mt-0 flex flex-col justify-center space-y-3 px-3 md:px-10'>
                 <div className='flex flex-col space-y-4'>
                     <h1 id='introduction' className='text-4xl font-bold'>Introdução</h1>
                     <p className='text-secondary'>
-                        Este é um guia voltado para o aprendizado sobre o desenvolvimento de aplicações web com React e Next.js. Aprenda a criar aplicações web modernas com as tecnologias mais utilizadas no mercado.
+                        Este é um guia voltado para o aprendizado sobre o desenvolvimento de aplicações web com React e Next. Aprenda a criar aplicações web modernas com as tecnologias mais utilizadas no mercado.
                     </p>
                     <p>
                         Ao longo deste guia, abordaremos desde conceitos fundamentais até práticas avançadas para o desenvolvimento de aplicações eficientes, escaláveis e performáticas. Se você está começando ou deseja aprimorar suas habilidades, este material será um ótimo recurso.
