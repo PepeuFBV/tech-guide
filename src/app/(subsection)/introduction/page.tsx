@@ -113,7 +113,7 @@ npm install`
                         <CodeArea code={`git clone https://github.com/seedabit/nextjs-react-typescript.git`} language='bash' />
                         <p>Após clonar o repositório, você pode acessar a pasta do projeto e instalar as dependências do projeto através do comando:</p>
                         <CodeArea code={code[1]} language='bash' />
-                        <p>Agora o seu ambiente de desenvolvimento está pronto para começar a desenvolver aplicações com o ecossistema.</p>
+                        <p>Agora o seu ambiente de desenvolvimento está pronto para começar a desenvolver aplicações com o nosso ecossistema.</p>
                     </div>
                 </div>
             </div>
