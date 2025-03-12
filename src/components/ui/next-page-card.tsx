@@ -14,6 +14,7 @@ interface PageCardProps {
 }
 const PageCard: React.FC<PageCardProps> = ({ previous = false, className }) => {
     const pathname = usePathname()
+    const [isHover, setIsHover] = useState<boolean>(false)
 
     function calculatePage(pathname: string, previous: boolean): SidebarItem | null {
         const topics: SidebarItem[] = sidebar.flatMap((section) => section.items).filter((item): item is SidebarItem => item !== undefined)
@@ -45,8 +46,6 @@ const PageCard: React.FC<PageCardProps> = ({ previous = false, className }) => {
 
     const title: string = previous ? 'Página Anterior' : 'Próxima página'
     const flexDirection: string = previous ? 'items-start' : 'items-end'
-
-    const [isHover, setIsHover] = useState<boolean>(false)
 
     return (
         <div className='mx-10'>
