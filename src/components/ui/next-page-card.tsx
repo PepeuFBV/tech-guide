@@ -18,6 +18,7 @@ const PageCard: React.FC<PageCardProps> = ({ previous = false, className }) => {
 
     function calculatePage(pathname: string, previous: boolean): SidebarItem | null {
         const topics: SidebarItem[] = sidebar.flatMap((section) => section.items).filter((item): item is SidebarItem => item !== undefined)
+        if (pathname === '/' && !previous) return topics[0]
         const currentPage: SidebarItem | undefined = topics.find((topic) => topic.href === pathname)
 
         if (!currentPage) return null
