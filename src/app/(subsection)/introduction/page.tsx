@@ -13,6 +13,7 @@ import { TailwindCSS } from '@/components/ui/icons/tailwindcss'
 import { Husky } from '@/components/ui/icons/husky'
 import { EsLint } from '@/components/ui/icons/eslint'
 import type { Topic } from '@/types/topic'
+import type { Tech } from '@/types/tech'
 
 const topics: Topic[] = [
     { title: 'Introdução', href: 'introduction' },
@@ -20,7 +21,7 @@ const topics: Topic[] = [
     { title: 'Instalação', href: 'installation' },
 ]
 
-const tech: { title: string, description: string, icon?: React.ReactNode, href: string }[] = [
+const tech: Tech[] = [
     {
         title: 'Typescript',
         description: 'JavaScript tipado a nível de produção',
@@ -90,7 +91,7 @@ npm install`
                         </div>
                         <div className='grid col-span-1 md:col-span-2 xl:grid-cols-3 gap-4'>
                             {tech.map((tech, index) => (
-                                <TechCard key={index} title={tech.title} description={tech.description} icon={tech.icon} href={tech.href} />
+                                <TechCard key={index} tech={tech} />
                             ))}
                         </div>
                     </div>
