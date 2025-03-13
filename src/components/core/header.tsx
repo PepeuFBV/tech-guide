@@ -78,9 +78,11 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
                 <Divider variant='vertical' />
                 <LanguageSelector className='ml-2 mr-2 cursor-not-allowed' />
                 <Divider variant='vertical' />
-                <Button variant='link' className='ml-2 p-2'>
-                    <Github size={21} />
-                </Button>
+                <Link href='https://github.com/seedabit/react-next-guide' passHref rel='noopener noreferrer' target='_blank'>
+                    <Button variant='link' className='ml-2 p-2'>
+                        <Github size={21} />
+                    </Button>
+                </Link>
             </section>
         </header>
     )
