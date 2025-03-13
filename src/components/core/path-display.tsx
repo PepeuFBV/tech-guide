@@ -16,14 +16,15 @@ const PathDisplay = () => {
         return currentEntry ? [currentEntry.title] : []
     }
 
-    function getSection(pathname: string) {
+    function getSection(pathname: string): SidebarItem | undefined {
         const sidebarEntry: SidebarItem | undefined = sidebar.find(entry => entry.href === pathname)
-        return sidebarEntry ? sidebarEntry.title : 'Ecossistema'
+        return sidebarEntry;
     }
 
     const names: string[] = getNames(pathname)
     if (names.length === 0) return null
-
+    let section = getSection(pathname)
+    section = section ? section : { title: 'Ecossistema', href: '/introduction', id: 0 }
     let currentName: string = ''
 
     return (
@@ -32,7 +33,7 @@ const PathDisplay = () => {
                 names[names.length - 1] === '/' ? (
                     <Link href='/introduction' className='text-secondary'>Ecossistema</Link>
                 ) : (
-                    <Link href='/introduction' className='text-secondary'>{getSection(pathname)}</Link>
+                    <Link href={section.href} className='text-secondary'>{section.title}</Link>
                 )
             )}
             <ChevronRight className='text-secondary' />
