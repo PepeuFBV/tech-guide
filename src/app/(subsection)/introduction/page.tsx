@@ -24,45 +24,45 @@ const topics: Topic[] = [
 const tech: Tech[] = [
     {
         title: 'Typescript',
-        description: 'JavaScript tipado a nível de produção',
+        description: 'JavaScript com tipagem estática para maior segurança e produtividade.',
         icon: <Typescript />,
         href: '/typescript',
     },
     {
         title: 'TailwindCSS',
-        description: 'Um framework CSS proporcionando rápidez',
+        description: 'Framework CSS utilitário para estilização rápida e eficiente.',
         icon: <TailwindCSS />,
-        href: '/tailwindcss',
+        href: '/tailwind',
     },
     {
         title: 'EsLint',
-        description: 'Encontre e corrija problemas no seu código',
+        description: 'Ferramenta para identificar e corrigir problemas no seu código posterior à commit.',
         icon: <EsLint />,
         href: '/eslint',
     },
     {
         title: 'Husky',
-        description: 'Prevenção de commits ruins',
+        description: 'Ferramenta para prevenir commits ruins com hooks de Git.',
         icon: <Husky />,
         href: '/husky',
     },
     {
         title: 'Node.js',
-        description: 'JavaScript no lado do servidor',
+        description: 'Ambiente de execução JavaScript server-side baseado no V8 do Chrome.',
         icon: <NodeJS />,
-        href: '/nodejs',
+        href: '/node',
     },
     {
         title: 'React',
-        description: 'Uma biblioteca JavaScript para criar interfaces de usuário',
+        description: 'Biblioteca JavaScript/Typescript para construir interfaces de usuário interativas.',
         icon: <ReactJS />,
         href: '/react/introduction',
     },
     {
         title: 'Next.js',
-        description: 'O framework React para produção',
+        description: 'Framework React para produção, com renderização server-side e geração estática.',
         icon: <NextJS />,
-        href: '/nextjs/introduction',
+        href: '/next/introduction',
     },
 ]
 
