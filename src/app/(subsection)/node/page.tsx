@@ -43,7 +43,7 @@ npm -v`]
                             <p>Para instalar o <VisitLink href='https://nodejs.org/en' rel='noopener' target='_blank'>Node.js</VisitLink> vá até o site oficial e baixe a versão LTS (Long Term Support) para o seu sistema operacional. O Node.js é instalado juntamente com o NPM (Node Package Manager), que é um gerenciador de pacotes JavaScript.</p>
                             <p>Após a instalação, você poderá verificar se o Node foi instalado corretamente através do terminal.</p>
                         </div>
-                        <CodeArea code={code[0]} language='bash' />
+                        <CodeArea code={code[0]} language='bash' showLineNumbers={false} />
                         <p className='text-secondary'>Há também outros gerenciadores de pacotes JavaScript, como o Yarn ou Bun. No entanto, o NPM é o mais utilizado e é instalado automaticamente com o Node.js. Pesquise mais sobre essas ferramentas e escolha a que melhor se adequa às suas preferências.</p>
                     </div>
                     <Divider variant='horizontal' color='secondary' className='w-full' />
@@ -54,7 +54,7 @@ npm -v`]
                             <p>Os pacotes JavaScript são bibliotecas de código JavaScript que você pode usar em seus projetos. Eles são publicados no NPM por desenvolvedores de todo o mundo e podem ser instalados em seus projetos com um simples comando.</p>
                             <p>Podemos rapidamente baixar todas as dependências de um projeto e executar scripts com o comando. Veja o comando abaixo, o mesmo serve para baixar todas as dependências de um projeto, definidas no arquivo <code>package.json</code>:</p>
                         </div>
-                        <CodeArea code={`npm install`} language='bash' />
+                        <CodeArea code={`npm install`} language='bash' showLineNumbers={false} />
                         <div className='flex flex-col space-y-4'>
                             <p>O comando acima criará um arquivo <code>package-lock.json</code> que contém a versão exata de cada pacote instalado. Isso garante que o projeto seja reproduzível em diferentes ambientes e evita problemas de compatibilidade. Além disso, cria o diretório <code>node_modules</code> que contém todos os pacotes instalados.</p>
                         </div>

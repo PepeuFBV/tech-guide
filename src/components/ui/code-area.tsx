@@ -13,8 +13,9 @@ interface CodeAreaProps {
     code: string
     copy?: boolean
     language?: Language
+    showLineNumbers?: boolean
 }
-const CodeArea: React.FC<CodeAreaProps> = ({ title, downloadLink, code, copy = true, language = 'tsx' }) => {
+const CodeArea: React.FC<CodeAreaProps> = ({ title, downloadLink, code, copy = true, language = 'tsx', showLineNumbers = true }) => {
     if ((title && !downloadLink) || (!title && downloadLink)) {
         throw new Error('Both title and downloadLink must be provided together.')
     }
@@ -44,7 +45,7 @@ const CodeArea: React.FC<CodeAreaProps> = ({ title, downloadLink, code, copy = t
                 <SyntaxHighlighter
                     lineProps={{ style: { wordBreak: 'break-all', whiteSpace: 'pre-wrap' } }}
                     wrapLines={true}
-                    showLineNumbers
+                    showLineNumbers={showLineNumbers}
                     language={language}
                     style={oneDark}
                 >
