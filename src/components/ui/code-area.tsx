@@ -20,7 +20,7 @@ const CodeArea: React.FC<CodeAreaProps> = ({ title, downloadLink, code, copy = t
     }
 
     const handleCopy = () => {
-        const formattedCode = code.replace(/\t/g, '    '); // Replace tabs with spaces
+        const formattedCode = code.replace(/\t/g, '    ')
         navigator.clipboard.writeText(formattedCode)
     }
 
