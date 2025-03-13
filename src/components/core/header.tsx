@@ -33,6 +33,11 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
                             </NavigationMenuTrigger>
                             <NavigationMenuContent className='p-4 grid grid-cols-3 gap-4 bg-background border border-black rounded-md shadow-lg'>
                                 <ul className='col-span-1 flex flex-wrap space-y-3'>
+                                    <li key={-1} className='flex-basis-1/2'>
+                                        <NavigationMenuLink href='/' className={cn(navigationMenuTriggerStyle(), 'gap-2')}>
+                                            Página Principal
+                                        </NavigationMenuLink>
+                                    </li>
                                     {sidebar.map((entry, index) => (
                                         <li key={index} className='flex-basis-1/2'>
                                             <NavigationMenuLink href={entry.href} className={cn(navigationMenuTriggerStyle(), 'gap-2')}>
@@ -73,9 +78,11 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
                 <Divider variant='vertical' />
                 <LanguageSelector className='ml-2 mr-2 cursor-not-allowed' />
                 <Divider variant='vertical' />
-                <Button variant='link' className='ml-2 p-2'>
-                    <Github size={21} />
-                </Button>
+                <Link href='https://github.com/seedabit/react-next-guide' passHref rel='noopener noreferrer' target='_blank'>
+                    <Button variant='link' className='ml-2 p-2'>
+                        <Github size={21} />
+                    </Button>
+                </Link>
             </section>
         </header>
     )
