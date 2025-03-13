@@ -3,11 +3,17 @@ import { cn } from '@/utils/lib/tailwind-merge'
 
 interface DividerProps {
     variant?: 'vertical' | 'horizontal' | 'personalized'
-    color?: 'default' | 'secondary'
+    color?: 'default' | 'secondary' | 'highlight'
     className?: string
 }
 const Divider: React.FC<DividerProps> = ({ variant, color = 'default', className }) => {
-    const colorClass = color === 'secondary' ? 'bg-border' : 'bg-secondary'
+
+    let colorClass: string = 'bg-secondary'
+    if (color === 'secondary') {
+        colorClass = 'bg-border'
+    } else if (color === 'highlight') {
+        colorClass = 'bg-sidebar-button-active'
+    }
 
     if (variant === 'personalized') {
         return (
