@@ -26,7 +26,7 @@ const IndexButton: React.FC<IndexButtonProps> = ({ href, children, className }) 
             <Button
                 variant='index'
                 size='index'
-                className={cn('', className)}
+                className={cn('text-wrap text-start', className)}
             >
                 {children}
             </Button>
