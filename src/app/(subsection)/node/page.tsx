@@ -76,7 +76,7 @@ npm -v`, `{
                     <div className='flex flex-col space-y-6'>
                         <div className='flex flex-col space-y-4'>
                             <h3 id='installation' className='text-3xl'>Instalação</h3>
-                            <p>Para instalar o <VisitLink href='https://nodejs.org/en' rel='noopener' target='_blank'>Node.js</VisitLink> vá até o site oficial e baixe a versão LTS (Long Term Support) para o seu sistema operacional. O Node.js é instalado juntamente com o NPM (Node Package Manager), que é um gerenciador de pacotes JavaScript.</p>
+                            <p>Para instalar o <VisitLink href='https://nodejs.org/en' rel='noopener' target='_blank'>Node.js</VisitLink> vá até o site oficial e baixe a versão <span className='italic'>LTS</span> (Long Term Support) para o seu sistema operacional. O Node.js é instalado juntamente com o NPM (Node Package Manager), que é um gerenciador de pacotes JavaScript.</p>
                             <p>Após a instalação, você poderá verificar se o Node foi instalado corretamente através do terminal.</p>
                         </div>
                         <CodeArea code={code[0]} language='bash' showLineNumbers={false} />
