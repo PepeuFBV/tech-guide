@@ -12,6 +12,7 @@ import { Typescript } from '@/components/ui/icons/typescript'
 import { TailwindCSS } from '@/components/ui/icons/tailwindcss'
 import { Husky } from '@/components/ui/icons/husky'
 import { EsLint } from '@/components/ui/icons/eslint'
+import { GithubWatchButton } from '@/components/ui/github-watch-button'
 import type { Topic } from '@/types/topic'
 import type { Tech } from '@/types/tech'
 
@@ -109,6 +110,7 @@ npm install`
                         <CodeArea code={code[0]} language='bash' showLineNumbers={false} />
                         <div className='flex flex-col space-y-4'>
                             <h3 className='text-2xl'>Repositório</h3>
+                            <GithubWatchButton href="https://github.com/seedabit/react-next-guide/subscription" ariaLabel='Watch seedabit/react-next-guide on GitHub' showCount />
                             <p>Para instalar o ecossistema, você pode clonar o repositório oficial do guia através do comando abaixo:</p>
                         </div>
                         <CodeArea code={`git clone https://github.com/seedabit/nextjs-react-typescript.git`} language='bash' showLineNumbers={false} />
@@ -119,6 +121,6 @@ npm install`
                 </div>
             </div>
             <PageIndex topics={topics} className='w-[20%] lg:w-[15%]' />
-        </div>
+        </div >
     )
 }
