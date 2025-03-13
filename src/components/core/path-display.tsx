@@ -4,22 +4,29 @@ import React from 'react'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { ChevronRight } from 'lucide-react'
-import { SidebarItem } from '@/types/sidebar'
+import { SidebarEntry, SidebarItem } from '@/types/sidebar'
 import { sidebar } from '@/data/sidebar'
 
 const PathDisplay = () => {
     const pathname: string = usePathname()
 
-    function getNames(pathname: string): string[] {
+    function getItem(pathname: string): SidebarItem | undefined {
         const allPaths: SidebarItem[] = sidebar.flatMap(entry => entry.items).filter(item => item !== undefined)
         const currentEntry: SidebarItem | undefined = allPaths.find(entry => entry.href === pathname)
-        return currentEntry ? [currentEntry.title] : []
+        return currentEntry;
     }
 
-    const names: string[] = getNames(pathname)
-    if (names.length === 0) return null
+    function getSection(pathname: string): SidebarEntry | undefined {
+        const section = pathname.split('/')[1]
+        const sidebarEntry: SidebarEntry | undefined = sidebar.find(entry => entry.href.split('/')[1] === section)
+        return sidebarEntry;
+    }
 
-    let currentName: string = ''
+    const sectionItem = getItem(pathname)
+    const names: string[] = sectionItem ? [sectionItem.title] : [];
+    if (names.length === 0) return null
+    let section = getSection(pathname)
+    section = section ? section : { title: 'Ecossistema', href: '/introduction', id: 0, icon: null, items: [] }
 
     return (
         <nav className='flex space-x-1 text-primary'>
@@ -27,16 +34,16 @@ const PathDisplay = () => {
                 names[names.length - 1] === '/' ? (
                     <Link href='/introduction' className='text-secondary'>Ecossistema</Link>
                 ) : (
-                    <Link href='/introduction' className='text-secondary'>Ecossistema</Link>
+                    <Link href={section.href} className='text-secondary'>{section.title}</Link>
                 )
             )}
             <ChevronRight className='text-secondary' />
             {names.map((name, index) => {
-                currentName += `/${name}`
                 const isCurrent = index === names.length - 1
+                const currrentHref = sectionItem ? sectionItem.href : "/introduction"
                 return (
                     <React.Fragment key={index}>
-                        <Link href={currentName} className={isCurrent ? 'text-primary hover:text-secondary' : 'text-secondary'}>
+                        <Link href={currrentHref} className={isCurrent ? 'text-primary hover:text-secondary' : 'text-secondary'}>
                             {name}
                         </Link>
                         {index < names.length - 1 && <ChevronRight />}

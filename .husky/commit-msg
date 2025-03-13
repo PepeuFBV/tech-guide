@@ -1,7 +1,7 @@
 COMMIT_MSG_FILE=$1
 COMMIT_MSG=$(cat "$COMMIT_MSG_FILE")
 
-CONVENTIONAL_COMMIT_REGEX='^(feat|fix|docs|style|refactor|test|chore|build|ci|cleanup|lint|remove|perf|revert)(\([a-zA-Z0-9._-]+\))?!?:[[:space:]].+$'
+CONVENTIONAL_COMMIT_REGEX='^(feat|fix|hotfix|docs|style|refactor|test|chore|build|ci|cleanup|lint|remove|perf|revert)(\([a-zA-Z0-9._-]+\))?!?:[[:space:]].+$'
 
 if ! [[ $COMMIT_MSG =~ $CONVENTIONAL_COMMIT_REGEX ]]; then
     echo "ERROR: Commit message does not follow Conventional Commits format."
@@ -12,6 +12,7 @@ if ! [[ $COMMIT_MSG =~ $CONVENTIONAL_COMMIT_REGEX ]]; then
     echo "Valid types:"
     echo "  feat:     new feature"
     echo "  fix:      bug or code error fix"
+    echo "  hotfix:   quick and dirty fix on urgent timeframe"
     echo "  docs:     documentation changes"
     echo "  style:    code style changes (spaces, formatting, etc.)"
     echo "  refactor: code refactoring without adding new features or fixing bugs"

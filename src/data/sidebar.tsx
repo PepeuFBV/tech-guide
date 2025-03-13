@@ -55,7 +55,7 @@ const sidebar: SidebarEntry[] = [
         items: [
             {
                 id: 7,
-                title: 'Introdução',
+                title: 'Introdução ao React',
                 href: '/react/introduction',
             },
             {
