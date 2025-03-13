@@ -32,7 +32,7 @@ const tech: Tech[] = [
         title: 'TailwindCSS',
         description: 'Framework CSS utilitário para estilização rápida e eficiente.',
         icon: <TailwindCSS />,
-        href: '/tailwindcss',
+        href: '/tailwind',
     },
     {
         title: 'EsLint',
@@ -50,7 +50,7 @@ const tech: Tech[] = [
         title: 'Node.js',
         description: 'Ambiente de execução JavaScript server-side baseado no V8 do Chrome.',
         icon: <NodeJS />,
-        href: '/nodejs',
+        href: '/node',
     },
     {
         title: 'React',
@@ -62,7 +62,7 @@ const tech: Tech[] = [
         title: 'Next.js',
         description: 'Framework React para produção, com renderização server-side e geração estática.',
         icon: <NextJS />,
-        href: '/nextjs/introduction',
+        href: '/next/introduction',
     },
 ]
 
