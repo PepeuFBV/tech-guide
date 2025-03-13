@@ -17,7 +17,7 @@ const PathDisplay = () => {
     }
 
     function getSection(pathname: string): SidebarEntry | undefined {
-        let section = pathname.split('/')[1]
+        const section = pathname.split('/')[1]
         const sidebarEntry: SidebarEntry | undefined = sidebar.find(entry => entry.href.split('/')[1] === section)
         return sidebarEntry;
     }
@@ -27,7 +27,6 @@ const PathDisplay = () => {
     if (names.length === 0) return null
     let section = getSection(pathname)
     section = section ? section : { title: 'Ecossistema', href: '/introduction', id: 0, icon: null, items: [] }
-    let currentName: string = ''
 
     return (
         <nav className='flex space-x-1 text-primary'>
@@ -41,7 +40,7 @@ const PathDisplay = () => {
             <ChevronRight className='text-secondary' />
             {names.map((name, index) => {
                 const isCurrent = index === names.length - 1
-                let currrentHref = sectionItem ? sectionItem.href : "/introduction"
+                const currrentHref = sectionItem ? sectionItem.href : "/introduction"
                 return (
                     <React.Fragment key={index}>
                         <Link href={currrentHref} className={isCurrent ? 'text-primary hover:text-secondary' : 'text-secondary'}>
