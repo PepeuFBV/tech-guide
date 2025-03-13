@@ -11,14 +11,50 @@ const topics: Topic[] = [
     { title: 'O que é?', href: 'what-is-node' },
     { title: 'Instalação', href: 'installation' },
     { title: 'NPM (Node Package Manager)', href: 'npm' },
-    { title: 'Configurações', href: 'settrings' },
     { title: 'Scripts', href: 'scripts' },
 ]
 
 export default function Node() {
 
     const code = [`node -v
-npm -v`]
+npm -v`, `{
+    "name": "nextjs-react-typescript",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "clean-dev": "rmdir /s /q .next && npm run dev",
+        "clean-build": "rmdir /s /q .next && npm run build",
+        "clean-install": "rmdir /s /q node_modules && npm ci",
+        "prepare": "husky"
+    },
+    "dependencies": {
+        "clsx": "^2.1.1",
+        "next": "15.1.7",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
+        "tailwind-merge": "^3.0.2"
+    },
+    "devDependencies": {
+        "@babel/preset-env": "^7.26.9",
+        "@babel/preset-react": "^7.26.3",
+        "@babel/preset-typescript": "^7.26.0",
+        "@eslint/eslintrc": "^3",
+        "@types/node": "^20",
+        "@types/react": "^19",
+        "@types/react-dom": "^19",
+        "eslint": "^9",
+        "eslint-config-next": "15.1.7",
+        "husky": "^9.1.7",
+        "postcss": "^8",
+        "tailwindcss": "^3.4.1",
+        "typescript": "^5"
+    }
+}
+`]
 
     return (
         <div className='w-full h-full flex items-start justify-start md:space-x-10'>
@@ -61,8 +97,39 @@ npm -v`]
                         <div className='flex flex-col space-y-4'>
                             <h3 className='text-2xl'><code>package.json</code></h3>
                             <p>O arquivo <code>package.json</code> é um arquivo de manifesto para um projeto Node.js. Ele contém metadados sobre o projeto, como nome, versão, descrição, scripts, dependências e muito mais. O NPM usa o arquivo <code>package.json</code> para instalar pacotes, executar scripts e gerenciar dependências.</p>
-
                         </div>
+                        <CodeArea title='package.json' downloadLink='/files/package.json' code={code[1]} language='json' />
+                        <div className='flex flex-col space-y-4'>
+                            <p>Como você pode ver, o arquivo <code>package.json</code> contém informações sobre o projeto, como nome, versão, scripts e dependências. Você pode personalizar o arquivo <code>package.json</code> para atender às necessidades do seu projeto. Veja a seguir uma descrição dos campos mais comuns do arquivo <code>package.json</code>:</p>
+                            <ul className='list-disc list-inside space-y-2'>
+                                <li><code>name</code>: O nome do projeto.</li>
+                                <li><code>version</code>: A versão do projeto.</li>
+                                <li><code>private</code>: Se o projeto é privado ou público.</li>
+                                <li><code>scripts</code>: Scripts personalizados para executar tarefas.</li>
+                                <li><code>dependencies</code>: Dependências do projeto.</li>
+                                <li><code>devDependencies</code>: Dependências de desenvolvimento do projeto.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <Divider variant='horizontal' color='secondary' className='w-full' />
+                    <div className='flex flex-col space-y-6'>
+                        <div className='flex flex-col space-y-4'>
+                            <h2 id='scripts' className='text-3xl'>Scripts</h2>
+                            <p>Os scripts no arquivo <code>package.json</code> são comandos personalizados que você pode executar com o NPM. Eles são úteis para automatizar tarefas comuns, como iniciar o servidor de desenvolvimento, construir o projeto, executar testes e muito mais.</p>
+                            <p>Os scripts do arquivo <code>package.json</code> do projeto serão explicados abaixo:</p>
+                            <ul className='list-disc list-inside space-y-2'>
+                                <li><code>dev</code>: Inicia o servidor de desenvolvimento do Next.js.</li>
+                                <li><code>build</code>: Constrói o projeto Next.js. É usado pelo servidor de produção.</li>
+                                <li><code>start</code>: Inicia o servidor de produção do Next.js.</li>
+                                <li><code>lint</code>: Executa o linter do Next.js. Esse comando também é chamado pelo Husky antes de cada commit.</li>
+                                <li><code>clean-dev</code>: Remove a pasta <code>.next</code> e inicia o servidor de desenvolvimento, recriando essa pasta (debug).</li>
+                                <li><code>clean-build</code>: Remove a pasta <code>.next</code> e constrói o projeto.</li>
+                                <li><code>clean-install</code>: Remove a pasta <code>node_modules</code> e re-instala as dependências (debug).</li>
+                                <li><code>prepare</code>: Configuração do Husky. Não será necessário rodar.</li>
+                            </ul>
+                            <p>Rode os comandos acima com:</p>
+                        </div>
+                        <CodeArea code={`npm run [command]`} language='bash' showLineNumbers={false} />
                     </div>
                 </div>
             </div>
