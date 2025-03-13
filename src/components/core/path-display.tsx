@@ -16,6 +16,11 @@ const PathDisplay = () => {
         return currentEntry ? [currentEntry.title] : []
     }
 
+    function getSection(pathname: string) {
+        const sidebarEntry: SidebarItem | undefined = sidebar.find(entry => entry.href === pathname)
+        return sidebarEntry ? sidebarEntry.title : 'Ecossistema'
+    }
+
     const names: string[] = getNames(pathname)
     if (names.length === 0) return null
 
@@ -27,7 +32,7 @@ const PathDisplay = () => {
                 names[names.length - 1] === '/' ? (
                     <Link href='/introduction' className='text-secondary'>Ecossistema</Link>
                 ) : (
-                    <Link href='/introduction' className='text-secondary'>Ecossistema</Link>
+                    <Link href='/introduction' className='text-secondary'>{getSection(pathname)}</Link>
                 )
             )}
             <ChevronRight className='text-secondary' />
