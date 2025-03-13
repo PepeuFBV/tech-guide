@@ -104,7 +104,7 @@ npm install`
                         <div className='flex flex-col space-y-4'>
                             <h3 className='text-2xl'>Node e NPM</h3>
                             <p>Para instalar o ecossistema, você precisará ter o <VisitLink href='/node'>Node</VisitLink> instalado em sua máquina. Com o mesmo instalado, você poderá instalar as tecnologias do ecossistema através do gerenciador de pacotes npm (node package manager) ou yarn (gerenciador de pacotes alternativo). Não se preocupe, o npm é instalado automaticamente com o Node.</p>
-                            <p>Para instalar o Node.js, acesse o site oficial [<VisitLink href='https://nodejs.org/en'>aqui</VisitLink>] e baixe a versão <span className='italic'>LTS</span> (Long Term Support), está versão garante suporte a longo prazo e estabilidade. Após a instalação, você poderá verificar se o Node foi instalado corretamente através do terminal.</p>
+                            <p>Para instalar o Node.js, acesse o site oficial [<VisitLink href='https://nodejs.org/en' rel='noopener' target='_blank'>aqui</VisitLink>] e baixe a versão <span className='italic'>LTS</span> (Long Term Support), está versão garante suporte a longo prazo e estabilidade. Após a instalação, você poderá verificar se o Node foi instalado corretamente através do terminal.</p>
                         </div>
                         <CodeArea code={code[0]} language='bash' />
                         <div className='flex flex-col space-y-4'>
