@@ -80,7 +80,7 @@ export default function Typescript() {
                             <p>A linguagem já está configurada no ambiente de desenvolvimento do projeto, então não é necessário instalar nada.</p>
                             <p>Entretanto, para a criação um novo projeto Typescript, basta executar o comando de instação do Typescript no seu projeto com o uso de um comando npm:</p>
                         </div>
-                        <CodeArea code={`npm install--save - dev typescript @types / react @types / node`} showLineNumbers={false} />
+                        <CodeArea code={`npm install--save - dev typescript @types / react @types / node`} language='bash' showLineNumbers={false} />
                         <p>O comando instalará o TypeScript e os tipos de definição para o React e o Node.js. Com isso, você poderá começar a escrever código TypeScript em seu projeto.</p>
                     </div>
                     <Divider variant='horizontal' color='secondary' className='w-full' />
@@ -90,7 +90,7 @@ export default function Typescript() {
                             <p>Podemos configurar o nosso projeto TypeScript no arquivo <code>tsconfig.json</code>. Este arquivo contém as configurações do compilador TypeScript, como o diretório de saída dos arquivos compilados, o nível de compatibilidade com o JavaScript, entre outras configurações.</p>
                         </div>
                     </div>
-                    <CodeArea title='tsconfig.json' downloadLink='/files/tsconfig.json' code={code[0]} />
+                    <CodeArea title='tsconfig.json' downloadLink='/files/tsconfig.json' code={code[0]} language='json' />
                     <div className='flex flex-col space-y-4'>
                         <p>A maioria das configurações do TypeScript são opcionais, mas é recomendado que você configure o seu projeto de acordo com as necessidades do seu projeto.</p>
                         <p>Importantes configurações do TypeScript:</p>
@@ -132,7 +132,7 @@ export default function Typescript() {
                             <h3 className='text-2xl'>Type Assertion</h3>
                             <p>O Type Assertion é uma forma de dizer ao TypeScript que você sabe o tipo de uma variável melhor do que ele. O Type Assertion é feito com a palavra-chave <code>as</code> ou com a sintaxe <code>&lt;Tipo&gt;</code>.</p>
                         </div>
-                        <CodeArea title='exemplo-typescript.ts' downloadLink='/files/exemplo-typescript.ts' code={code[1]} />
+                        <CodeArea title='exemplo-typescript.ts' downloadLink='/files/exemplo-typescript.ts' code={code[1]} language='tsx' />
                         <p className='text-secondary'>O "<code>;</code>" é opcional no final de uma instrução em TypeScript.</p>
                     </div>
                     <Divider variant='horizontal' color='secondary' className='w-full' />
@@ -143,9 +143,9 @@ export default function Typescript() {
                             <p>Elas serão melhor apresentadas e utilizadas ao passar props para componentes React, veja em <VisitLink href='/react/componentes' target='_blank' rel='noreferrer'>componentes</VisitLink>.</p>
                             <p>Por enquanto, segue um exemplo de interface:</p>
                         </div>
-                        <CodeArea title='exemplo-interface.ts' downloadLink='/files/exemplo-interface.ts' code={code[2]} />
+                        <CodeArea title='exemplo-interface.ts' downloadLink='/files/exemplo-interface.ts' code={code[2]} language='tsx' />
                         <p>Podemos utilizar a <code>?</code> para definir propriedades opcionais. Além disso, podemos utilizar a <code>|</code> para definir propriedades que podem ter mais de um tipo.</p>
-                        <CodeArea title='exemplo-interface2.ts' downloadLink='/files/exemplo-interface.ts' code={code[3]} />
+                        <CodeArea title='exemplo-interface2.ts' downloadLink='/files/exemplo-interface.ts' code={code[3]} language='tsx' />
                         <p className='text-secondary'>Ao definir uma váriavel como opcional, é equivalente a definir que ela pode ser <code>undefined</code>. Ou seja <code>email?: string</code> é equivalente a <code>email: string | undefined</code>.</p>
                     </div>
                     <Divider variant='horizontal' color='secondary' className='w-full' />
@@ -156,7 +156,7 @@ export default function Typescript() {
                             <p>Os generics são muito utilizados em bibliotecas e frameworks, como o React, para criar componentes que podem trabalhar com diferentes tipos de dados.</p>
                             <p>Veja um exemplo de como criar uma função genérica:</p>
                         </div>
-                        <CodeArea title='exemplo-generics.ts' downloadLink='/files/exemplo-generics.ts' code={code[4]} />
+                        <CodeArea title='exemplo-generics.ts' downloadLink='/files/exemplo-generics.ts' code={code[4]} language='tsx' />
                         <p>Na função acima, o tipo <code>T</code> é um tipo genérico que pode ser qualquer tipo de dado. Isso permite que a função seja usada com diferentes tipos de dados, sem sacrificar a segurança de tipos.</p>
                     </div>
                 </div>
