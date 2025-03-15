@@ -14,21 +14,21 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
     const pathname = usePathname()
 
     type JustifyType = 'justify-between' | 'justify-end' | 'justify-start' | 'hidden'
-    function checkForBothPages(): JustifyType { // also checks for page not-found
+    function checkForBothPagesForStyle(): JustifyType { // also checks for page not-found
         if (pathname === '/') return 'justify-end'
         const topics: SidebarItem[] = sidebar.flatMap((section) => section.items).filter((item): item is SidebarItem => item !== undefined)
         const currentPageIndex: number = topics.findIndex((topic) => topic.href === pathname)
-        if (currentPageIndex === -1) return 'hidden'
+        if (currentPageIndex === -1) return 'hidden' // page not found
         if (currentPageIndex === 0) return 'justify-end'
         if (currentPageIndex === topics.length - 1) return 'justify-start'
         return 'justify-between'
     }
 
-    const justifyContent: string = checkForBothPages()
+    const justifyContent: string = checkForBothPagesForStyle()
 
     return (
-        <footer className={cn('w-full md:w-[75%] lg:w-[80%] bottom-0 h-32 md:h-20 bg-background px-3 md:px-10', justifyContent, className)}>
-            <div className='w-full flex flex-wrap gap-3 items-center justify-between px-3 md:px-6'>
+        <footer className={cn('w-full md:w-[75%] lg:w-[80%] bottom-0 h-32 md:h-20 bg-background px-3 md:px-10', className)}>
+            <div className={cn('w-full flex flex-wrap gap-3 items-center justify-between px-3 md:px-6', justifyContent)}>
                 <PageCard previous />
                 <PageCard />
             </div>

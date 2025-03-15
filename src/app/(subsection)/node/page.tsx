@@ -130,6 +130,7 @@ npm -v`, `{
                             <p>Rode os comandos acima com:</p>
                         </div>
                         <CodeArea code={`npm run [command]`} language='bash' showLineNumbers={false} />
+                        <p className='text-secondary'>Recomenda-se a execução de <code>npm run lint</code> e <code>npm run build</code> antes do envio de uma PR para o repositório. Isso garante que o código esteja funcionando corretamente e seguindo os padrões definidos.</p>
                     </div>
                 </div>
             </div>
