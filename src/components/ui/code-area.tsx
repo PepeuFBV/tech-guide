@@ -28,7 +28,7 @@ const CodeArea: React.FC<CodeAreaProps> = ({ title, downloadLink, code, copy = t
     return (
         <div className='flex flex-col space-y-0'>
             {downloadLink && (
-                <a href={downloadLink} download>
+                <a href={downloadLink} download className='w-fit'>
                     <div className='ml-1 flex items-center gap-2'>
                         <p className='font-thin italic'>{title}</p>
                         <Download className='w-5 h-5' />
