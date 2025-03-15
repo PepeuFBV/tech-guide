@@ -83,7 +83,7 @@ export default function ESLint() {
                     <div className='flex flex-col space-y-6'>
                         <div className='flex flex-col space-y-4'>
                             <h2 id='usage' className='text-3xl'>Uso</h2>
-                            <p className='text-secondary'>O ESLint está configurado, com ajuda do Husky, para ser executado automaticamente antes de cada commit. Isso garante que o código esteja em conformidade com as regras de estilo definidas no arquivo de configuração. O seu commit não será concluído se o ESLint encontrar problemas no código.</p>
+                            <p className='text-secondary'>O ESLint está configurado, com ajuda do <VisitLink href='/husky'>Husky</VisitLink>, para ser executado automaticamente antes de cada commit. Isso garante que o código esteja em conformidade com as regras de estilo definidas no arquivo de configuração. O seu commit não será concluído se o ESLint encontrar problemas no código.</p>
                             <p>Para executar o ESLint em seu projeto, você pode usar o comando:</p>
                         </div>
                         <CodeArea code={`npm run lint`} language='bash' showLineNumbers={false} />
