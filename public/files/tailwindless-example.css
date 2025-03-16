@@ -1,0 +1,6 @@
+.text-component {
+    background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1)); /* bg-blue-500 */
+    color: rgb(255 255 255 / var(--tw-text-opacity, 1)); /* text-white */
+    padding: 1rem; /* p-4 */
+    border-radius: 0.5rem; /* rounded-lg */
+}

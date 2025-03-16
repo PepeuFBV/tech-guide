@@ -5,7 +5,7 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { Clipboard, Download } from 'lucide-react'
 
-type Language = 'bash' | 'json' | 'typescript' | 'tsx' | 'css' | 'html'
+type Language = 'bash' | 'json' | 'typescript' | 'tsx' | 'css' | 'html' | 'javascript'
 
 interface CodeAreaProps {
     title?: string
