@@ -7,7 +7,7 @@ import React from 'react'
 
 const topics: Topic[] = [
     { title: 'Introdução ao React', href: 'introduction' },
-    { title: 'O que é o React?', href: 'what-is' },
+    { title: 'O que é o React?', href: 'what-is-react' },
     { title: 'Instalação', href: 'installation' },
     { title: 'Conceitos do React', href: 'concepts' },
 ]
@@ -25,7 +25,7 @@ export default function Introduction() {
                     <Divider variant='horizontal' color='secondary' className='w-full' />
                     <div className='flex flex-col space-y-8'>
                         <div className='flex flex-col space-y-4'>
-                            <h2 id='what-is' className='text-3xl'>O que é o React?</h2>
+                            <h2 id='what-is-react' className='text-3xl'>O que é o React?</h2>
                             <p>A resposta curta: uma biblioteca que permite a você criar de forma fácil a interface do usuário de dentro do Javascript. Sim, isso quer dizer que na maior parte do tempo, você estará utilizando apenas Javascript para construir a interface. Claro, estilos ainda são feitos usando CSS, mas até isso é um pouco diferente aqui. A ideia é poder utilizar todo o poder de uma linguagem de programação para construir uma interface, não apenas o de uma linguagem de marcação como HTML. </p>
                             <p>O que podemos fazer utilizando uma linguagem de programação que não podemos utilizando apenas o HTML? Muita coisa na verdade. Se eu quiser que um elemento apareça mil vezes em HTML, temos duas opções: realmente escrever o HTML desse elemento mil vezes ou usar Javascript. Mas os scripts para Javascript são horrendos, tendem a ficar enormes e não são nem um pouco fáceis de lidar. E se eu quiser que os elementos ímpares sejam de cores alternadas? Escrevo todos eles? Render-se ao Javascript é a única opção, mas ele não precisa ser tão difícil assim de lidar.</p>
                             <p>O React resolve esse problema de forma simples. Você cria pedacinhos da sua interface, que chamamos de componentes. Cada componente cuida da sua própria vida e dos seus estilos CSS. Além disso, cada componente é customizável, permitindo alterações. Isso é o que React é.</p>
