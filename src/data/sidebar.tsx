@@ -102,7 +102,32 @@ const sidebar: SidebarEntry[] = [
                 href: '/next/features',
             },
         ],
-    }
+
+    },
+    {
+        id: 3,
+        title: 'Desafio',
+        href: '/desafio/introduction',
+        icon: <ReactJS/>,
+        items: [
+            {
+                id: 15,
+                title: 'Introdução',
+                href: '/desafio/introduction',
+            },
+            {
+                id: 16,
+                title: 'Etapas',
+                href: '/desafio/steps',
+            },
+            {
+                id: 15,
+                title: 'Projetos',
+                href: '/desafio/projects',
+            },
+        ],
+
+    },
 ]
 
 export { sidebar }
