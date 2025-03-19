@@ -126,7 +126,7 @@ export default function Props() {
                             <h2 id='children-props' className='text-3xl'>Propiedade Children</h2>
                             <p>Dentro do HTML, somos logo de cara ensinados que um elemento {"<div></div>"} pode ter vários elementos dentro dele. Componentes não são diferentes, e quando queremos passar elementos ou texto para dentro de um componente, podemos fazer isso através da propriedade especial Children!</p>
                             <CodeArea code={code[3]} language='tsx' />
-                            <p>No exemplo acima, utilizamos a Prop Children para criar um containera especial. Voltando ao exemplo anterior do botão, poderíamos reescrevê-lo da seguinte forma:</p>
+                            <p>No exemplo acima, utilizamos a Prop Children para criar um container especial. Voltando ao exemplo anterior do botão, poderíamos reescrevê-lo da seguinte forma:</p>
                             <CodeArea code={code[4]} language='tsx' />
                             <p>Agora, você está pronto para aprender sobre estado!</p>
                         </div>
