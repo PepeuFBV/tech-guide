@@ -8,7 +8,7 @@ import VisitLink from '@/components/ui/visit-link'
 
 const topics: Topic[] = [
     { title: 'Introdução', href: 'introduction' },
-    { title: 'O que é?', href: 'what-is-node' },
+    { title: 'O que é?', href: 'what-is-eslint' },
     { title: 'Instalação', href: 'installation' },
     { title: 'Configuração', href: 'settings' },
     { title: 'Uso', href: 'usage' },
@@ -49,7 +49,7 @@ export default function ESLint() {
                     </div>
                     <Divider variant='horizontal' color='secondary' className='w-full' />
                     <div className='flex flex-col space-y-4'>
-                        <h2 id='what-is-node' className='text-3xl'>O que é?</h2>
+                        <h2 id='what-is-eslint' className='text-3xl'>O que é?</h2>
                         <p>ESLint é uma ferramenta de análise estática de código projetada para JavaScript e TypeScript. Ele examina seu código em busca de erros de sintaxe, inconsistências de formatação e possíveis bugs, com base em um conjunto de regras predefinidas ou personalizadas. Ao integrar o ESLint ao seu fluxo de trabalho, você pode:</p>
                         <ul className='list-disc list-inside space-y-2'>
                             <li>Identificar e corrigir problemas de código antes de executar o aplicativo.</li>
