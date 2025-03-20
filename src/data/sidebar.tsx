@@ -88,18 +88,8 @@ const sidebar: SidebarEntry[] = [
             },
             {
                 id: 12,
-                title: 'Instalação',
-                href: '/next/installation',
-            },
-            {
-                id: 13,
-                title: 'Configuração',
-                href: '/next/configuration',
-            },
-            {
-                id: 14,
-                title: 'Features',
-                href: '/next/features',
+                title: 'Instalação e Configuração',
+                href: '/next/installation-and-settings',
             },
         ],
     }
