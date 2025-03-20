@@ -96,11 +96,6 @@ const sidebar: SidebarEntry[] = [
                 title: 'Configuração',
                 href: '/next/configuration',
             },
-            {
-                id: 14,
-                title: 'Features',
-                href: '/next/features',
-            },
         ],
     }
 ]
