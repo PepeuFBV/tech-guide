@@ -24,7 +24,7 @@ interface CodeAreaProps {
     language?: Language
     showLineNumbers?: boolean
 }
-const CodeArea: React.FC<CodeAreaProps> = ({ link, code, copy = true, language = 'bash', showLineNumbers = true }) => {
+const CodeArea: React.FC<CodeAreaProps> = ({ link, code, copy = true, language, showLineNumbers = true }) => {
     const [fileContent, setFileContent] = useState<string | null>(null)
     const [fileName, setFileName] = useState<string | null>(null)
     const [fileExtension, setFileExtension] = useState<string | null>(null)
