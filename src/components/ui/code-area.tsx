@@ -30,6 +30,18 @@ const CodeArea: React.FC<CodeAreaProps> = ({ link, code, copy = true, language =
     const [fileExtension, setFileExtension] = useState<string | null>(null)
     const [error, setError] = useState<string | null>(null)
 
+    if ((link && code) || (!link && !code)) {
+        throw new Error('Either link or code must be provided')
+    }
+
+    if (code && !language) {
+        throw new Error('Language must be provided when raw code is provided')
+    }
+
+    if (language === 'bash') {
+        showLineNumbers = false
+    }
+
     function checkIfExtensionIsValid(extension: string | null): boolean {
         if (!extension || extension === null) return false
         return extension in extensionToLanguageMap
@@ -66,14 +78,6 @@ const CodeArea: React.FC<CodeAreaProps> = ({ link, code, copy = true, language =
     useEffect(() => {
         if (link) fetchFileContent(link)
     }, [link])
-
-    if ((link && code) || (!link && !code)) {
-        throw new Error('Either link or code must be provided')
-    }
-
-    if (language === 'bash') {
-        showLineNumbers = false
-    }
 
     const handleCopy = () => {
         const formattedCode = (code || fileContent)?.replace(/\t/g, '    ')
