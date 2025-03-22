@@ -14,7 +14,8 @@ const extensionToLanguageMap: { [key: string]: Language } = {
     'tsx': 'tsx',
     'css': 'css',
     'html': 'html',
-    'js': 'javascript'
+    'js': 'javascript',
+    'mjs': 'javascript'
 }
 
 interface CodeAreaProps {
