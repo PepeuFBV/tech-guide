@@ -14,28 +14,6 @@ const topics: Topic[] = [
     { title: 'Uso', href: 'usage' },
 ]
 
-const code: string[] = [`import { dirname } from 'path'
-import { fileURLToPath } from 'url'
-import { FlatCompat } from '@eslint/eslintrc'
-
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = dirname(__filename)
-
-const compat = new FlatCompat({
-    baseDirectory: __dirname,
-})
-
-const eslintConfig = [
-    ...compat.extends('next/core-web-vitals', 'next/typescript'),
-    {
-        rules: {
-            'react/no-unescaped-entities': 0,
-        },
-    },
-]
-
-export default eslintConfig`]
-
 export default function ESLint() {
     return (
         <div className='w-full h-full flex items-start justify-start md:space-x-10'>
@@ -64,9 +42,9 @@ export default function ESLint() {
                             <h2 id='installation' className='text-3xl'>Instalação</h2>
                             <p>No nosso projeto, o ESLint já está configurado e pronto para uso. Para instalar o ESLint em um novo projeto, você pode executar o seguinte comando:</p>
                         </div>
-                        <CodeArea code={`npm install eslint --save-dev`} language='bash' showLineNumbers={false} />
+                        <CodeArea code={`npm install eslint --save-dev`} language='bash' />
                         <p>Depois de instalar o ESLint, você pode inicializar um arquivo de configuração usando o comando:</p>
-                        <CodeArea code={`npx eslint --init`} language='bash' showLineNumbers={false} />
+                        <CodeArea code={`npx eslint --init`} language='bash' />
                         <p>Este comando irá guiá-lo através de um assistente de configuração para criar um arquivo de configuração personalizado para o seu projeto.</p>
                     </div>
                     <Divider variant='horizontal' color='secondary' className='w-full' />
@@ -75,7 +53,7 @@ export default function ESLint() {
                             <h2 id='settings' className='text-3xl'>Configuração</h2>
                             <p>O ESLint é altamente configurável, permitindo personalizar seu comportamento conforme as necessidades do seu projeto. A configuração geralmente é armazenada em um arquivo chamado <code>.eslintrc.js</code>, <code>.eslintrc.json</code> ou <code>.eslintrc.yaml</code>; no nosso caso, em <code>eslint.config.mjs</code>, um arquivo de modulo de Javascript. As configurações no nosso projeto são as seguintes:</p>
                         </div>
-                        <CodeArea title='eslint.config.mjs' downloadLink='/files/eslint.config.mjs' code={code[0]} language='javascript' showLineNumbers={true} />
+                        <CodeArea link='eslint.config.mjs' />
                         <p>A maioria das configurações são importadas de pacotes de regras predefinidas, <code>next/core-web-vitals</code> e <code>next/typescript</code>. Você também pode adicionar regras personalizadas ao arquivo de configuração para atender às necessidades específicas do seu projeto.</p>
                         <p className='text-secondary'>Aprenda mais sobre as configurações disponíveis no <VisitLink href='https://eslint.org/docs/latest/use/configure/'>guia de configuração do ESLint</VisitLink>.</p>
                     </div>
@@ -86,12 +64,12 @@ export default function ESLint() {
                             <p className='text-secondary'>O ESLint está configurado, com ajuda do <VisitLink href='/husky'>Husky</VisitLink>, para ser executado automaticamente antes de cada commit. Isso garante que o código esteja em conformidade com as regras de estilo definidas no arquivo de configuração. O seu commit não será concluído se o ESLint encontrar problemas no código.</p>
                             <p>Para executar o ESLint em seu projeto, você pode usar o comando:</p>
                         </div>
-                        <CodeArea code={`npm run lint`} language='bash' showLineNumbers={false} />
+                        <CodeArea code={`npm run lint`} language='bash' />
                         <div className='flex flex-col space-y-4'>
                             <p className='text-secondary'>O comando acima foi configurado no <code>package.json</code> para executar o ESLint em todos os arquivos JavaScript e TypeScript do projeto. Ele irá analisar o código em busca de problemas e exibir os resultados no terminal.</p>
                             <p><span className='font-bold'>Não recomendado -</span> para corrigir automaticamente os problemas identificados pelo ESLint, você pode executar o comando:</p>
                         </div>
-                        <CodeArea code={`npx eslint . --fix`} language='bash' showLineNumbers={false} />
+                        <CodeArea code={`npx eslint . --fix`} language='bash' />
                     </div>
                 </div>
             </div>

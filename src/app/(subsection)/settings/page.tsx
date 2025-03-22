@@ -13,45 +13,6 @@ const topics: Topic[] = [
 ]
 
 export default function Settings() {
-
-    const code: string[] = [`{
-    "name": "nextjs-react-typescript", //<-- Nome do projeto
-    "version": "0.1.0", //<-- Versão do projeto
-    "private": true,
-    "scripts": {
-        "dev": "next dev",
-        "build": "next build",
-        "start": "next start",
-        "lint": "next lint",
-        "clean-dev": "rmdir /s /q .next && npm run dev",
-        "clean-build": "rmdir /s /q .next && npm run build",
-        "clean-install": "rmdir /s /q node_modules && npm ci",
-        "prepare": "husky"
-    },
-    "dependencies": {
-        "clsx": "^2.1.1",
-        "next": "15.1.7",
-        "react": "^19.0.0",
-        "react-dom": "^19.0.0",
-        "tailwind-merge": "^3.0.2"
-    },
-    "devDependencies": {
-        "@babel/preset-env": "^7.26.9",
-        "@babel/preset-react": "^7.26.3",
-        "@babel/preset-typescript": "^7.26.0",
-        "@eslint/eslintrc": "^3",
-        "@types/node": "^20",
-        "@types/react": "^19",
-        "@types/react-dom": "^19",
-        "eslint": "^9",
-        "eslint-config-next": "15.1.7",
-        "husky": "^9.1.7",
-        "postcss": "^8",
-        "tailwindcss": "^3.4.1",
-        "typescript": "^5"
-    }
-}`]
-
     return (
         <div className='w-full h-full flex items-start justify-start md:space-x-10'>
             <div className='w-full md:w-[75%] lg:w-[80%] mt-5 md:mt-0 flex flex-col justify-center space-y-3 px-3 md:px-10'>
@@ -121,7 +82,7 @@ export default function Settings() {
                             <p>De começo, podemos definir um nome para nosso projeto no arquivo <code>package.json</code>, além de definir uma versão inicial para a aplicação.</p>
                             <p className='text-secondary'>A versão inicial é importante para que possamos controlar as versões da aplicação, além de ser um padrão de mercado. Recomendamos a utilização de <code>1.0.0-SNAPSHOT</code> para a primeira versão.</p>
                         </div>
-                        <CodeArea title='package.json' downloadLink='/files/package.json' code={code[0]} language='json' />
+                        <CodeArea link='package.json' />
                         <p className='text-secondary'>Mais detalhes desse arquivo poderão ser encontradas em <VisitLink href='/node'>Node</VisitLink> e em outras páginas deste guia.</p>
                     </div>
                 </div>
