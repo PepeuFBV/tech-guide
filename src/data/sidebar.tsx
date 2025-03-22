@@ -70,8 +70,8 @@ const sidebar: SidebarEntry[] = [
             },
             {
                 id: 10,
-                title: 'Estado',
-                href: '/react/state',
+                title: 'Hooks',
+                href: '/react/hooks',
             },
         ],
     },
