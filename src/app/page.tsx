@@ -16,8 +16,8 @@ export default function Home() {
             <div className='w-full md:w-[75%] lg:w-[80%] mt-5 md:mt-0 flex flex-col justify-center space-y-10 px-3 md:px-10'>
                 <div className='flex flex-col space-y-4'>
                     <h1 id='introduction' className='text-4xl'>Introdução</h1>
-                    <p className='text-secondary'>Este é um guia voltado para o aprendizado sobre o desenvolvimento de aplicações web com React e Next. Aprenda a criar aplicações web modernas com as tecnologias mais utilizadas no mercado.</p>
-                    <p>Ao longo deste guia, abordaremos desde conceitos fundamentais até práticas avançadas para o desenvolvimento de aplicações eficientes, escaláveis e performáticas. Se você está começando ou deseja aprimorar suas habilidades, este material será um ótimo recurso.</p>
+                    <p>Este é um guia voltado para o aprendizado sobre o desenvolvimento de aplicações web com React e Next. Aprenda a criar aplicações web modernas com as tecnologias mais utilizadas no mercado. Ao longo deste guia, abordaremos desde conceitos fundamentais até práticas avançadas para o desenvolvimento de aplicações eficientes, escaláveis e performáticas.</p>
+                    <p className='text-secondary'>Se você está começando ou deseja aprimorar suas habilidades, este material será um ótimo recurso.</p>
                 </div>
                 <Divider variant='horizontal' color='secondary' className='w-full' />
                 <div className='flex flex-col space-y-4'>
@@ -43,7 +43,7 @@ export default function Home() {
                 <Divider variant='horizontal' color='secondary' className='w-full' />
                 <div className='flex flex-col space-y-4'>
                     <h2 id='how-to-use-this-guide' className='text-2xl font-semibold'>Como usar este guia?</h2>
-                    <p>Este guia foi dividido em seções, cada uma abordando um tópico específico. Você pode navegar entre as seções utilizando o menu lateral à esquerda. É sugerido que você siga a ordem das seções para um aprendizado mais eficiente.</p>
+                    <p>Este guia foi dividido em seções, cada uma abordando um tópico específico. Você pode navegar entre as seções utilizando o menu lateral à esquerda. É sugerido que você siga a ordem das seções para um aprendizado mais eficiente. No decorrer do guia é utilizado um template de projeto para facilitar o aprendizado e a aplicação dos conceitos abordados.</p>
                 </div>
             </div>
             <PageIndex topics={topics} className='w-[20%] lg:w-[15%]' />
