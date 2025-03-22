@@ -30,6 +30,7 @@ const CodeArea: React.FC<CodeAreaProps> = ({ link, code, copy = true, language, 
     const [fileName, setFileName] = useState<string | null>(null)
     const [fileExtension, setFileExtension] = useState<string | null>(null)
     const [error, setError] = useState<string | null>(null)
+    const [downloadLink, setDownloadLink] = useState<string | null>(null)
 
     if ((link && code) || (!link && !code)) {
         throw new Error('Either link or code must be provided')
@@ -46,6 +47,11 @@ const CodeArea: React.FC<CodeAreaProps> = ({ link, code, copy = true, language, 
     function checkIfExtensionIsValid(extension: string | null): boolean {
         if (!extension || extension === null) return false
         return extension in extensionToLanguageMap
+    }
+
+    function makeDownloadLink(content: string) {
+        const blob = new Blob([content], { type: 'text/plain' })
+        return URL.createObjectURL(blob)
     }
 
     async function fetchFileContent(link: string) {
@@ -67,6 +73,7 @@ const CodeArea: React.FC<CodeAreaProps> = ({ link, code, copy = true, language, 
             } else {
                 setFileExtension(null)
             }
+            setDownloadLink(makeDownloadLink(data.content))
         } catch (error) {
             if (error instanceof Error) {
                 setError(`Failed to fetch file content: ${error.message}`)
@@ -87,16 +94,14 @@ const CodeArea: React.FC<CodeAreaProps> = ({ link, code, copy = true, language, 
 
     return (
         <div className='flex flex-col space-y-0'>
-            {link && (
-                <a href={link} download className='w-fit'>
+            {downloadLink && (
+                <a href={downloadLink} download={fileName} className='w-fit'>
                     <div className='ml-1 flex items-center gap-2'>
                         <p className='font-thin italic'>{fileName}</p>
                         <Download className='w-5 h-5' />
                     </div>
-                </a>)
-                ||
-                <p className='ml-1 font-thin italic'>{fileName}</p>
-            }
+                </a>
+            ) || <p className='ml-1 font-thin italic'>{fileName}</p>}
             <div className='relative w-full'>
                 {copy &&
                     <div className='absolute p-1 right-3 top-[21px] hover:bg-zinc-800/70 rounded-md cursor-pointer' onClick={handleCopy}>
