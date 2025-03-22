@@ -48,7 +48,7 @@ const CodeArea: React.FC<CodeAreaProps> = ({ link, code, copy = true, language, 
         return extension in extensionToLanguageMap
     }
 
-    async function fetchFileContent(link: string = '') {
+    async function fetchFileContent(link: string) {
         try {
             const response = await fetch(`/api?link=${link}`)
             if (!response.ok) {
