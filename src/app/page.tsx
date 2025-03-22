@@ -31,13 +31,13 @@ export default function Home() {
                     <ul className='list-disc list-inside space-y-2'>
                         <li>Fundamentos de React</li>
                         <li>Fundamentos de Typescript</li>
-                        <li>Componentes e Props</li>
-                        <li>Hooks, Estado e Ciclo de Vida</li>
                         <li>Estilização com TailwindCSS</li>
+                        <li>Componentes e Props</li>
+                        <li>Hooks: useState, useEffect e useContext</li>
                         <li>Introdução ao Next.js</li>
-                        <li>Roteamento e Navegação</li>
-                        <li>APIs e Requisições HTTP</li>
-                        <li>Deploy de Aplicações</li>
+                        <li>Roteamento e Navegação no Next.js</li>
+                        <li>APIs e Requisições HTTP (futuro)</li>
+                        <li>Deploy de Aplicações (futuro)</li>
                     </ul>
                 </div>
                 <Divider variant='horizontal' color='secondary' className='w-full' />
