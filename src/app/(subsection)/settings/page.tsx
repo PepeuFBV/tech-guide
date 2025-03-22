@@ -82,7 +82,7 @@ export default function Settings() {
                             <p>De começo, podemos definir um nome para nosso projeto no arquivo <code>package.json</code>, além de definir uma versão inicial para a aplicação.</p>
                             <p className='text-secondary'>A versão inicial é importante para que possamos controlar as versões da aplicação, além de ser um padrão de mercado. Recomendamos a utilização de <code>1.0.0-SNAPSHOT</code> para a primeira versão.</p>
                         </div>
-                        <CodeArea link='package.json' />
+                        <CodeArea link='/ecosystem/settings/package.json' />
                         <p className='text-secondary'>Mais detalhes desse arquivo poderão ser encontradas em <VisitLink href='/node'>Node</VisitLink> e em outras páginas deste guia.</p>
                     </div>
                 </div>

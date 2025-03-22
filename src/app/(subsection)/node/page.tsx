@@ -61,7 +61,7 @@ export default function Node() {
                             <h3 className='text-2xl'><code>package.json</code></h3>
                             <p>O arquivo <code>package.json</code> é um arquivo de manifesto para um projeto Node.js. Ele contém metadados sobre o projeto, como nome, versão, descrição, scripts, dependências e muito mais. O NPM usa o arquivo <code>package.json</code> para instalar pacotes, executar scripts e gerenciar dependências.</p>
                         </div>
-                        <CodeArea link='package.json' />
+                        <CodeArea link='/ecosystem/node/package.json' />
                         <div className='flex flex-col space-y-4'>
                             <p>Como você pode ver, o arquivo <code>package.json</code> contém informações sobre o projeto, como nome, versão, scripts e dependências. Você pode personalizar o arquivo <code>package.json</code> para atender às necessidades do seu projeto. Veja a seguir uma descrição dos campos mais comuns do arquivo <code>package.json</code>:</p>
                             <ul className='list-disc list-inside space-y-2'>

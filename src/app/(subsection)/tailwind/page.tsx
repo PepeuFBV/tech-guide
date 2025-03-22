@@ -40,12 +40,12 @@ export default function Tailwind() {
                             <p className='text-secondary'>O PostCSS também deve ser instalado para que o Tailwind CSS funcione corretamente.</p>
                             <p>Após a instalação, o arquivo de configurações do PostCSS também deve ser editado para que o Tailwind CSS seja carregado corretamente. Adicione o Tailwind CSS como um plugin no arquivo <code>postcss.config.js</code>:</p>
                         </div>
-                        <CodeArea link='postcss.config.mjs' />
+                        <CodeArea link='/ecosystem/tailwind/postcss.config.mjs' />
                         <div className='flex flex-col space-y-4'>
                             <p className='text-secondary'>O arquivo de configuração é do tipo <code>mjs</code> é um arquivo JavaScript Module.</p>
                             <p>Também é preciso adicionar as diretivas de importação do Tailwind CSS no topo arquivo de estilos principal do projeto. No nosso caso, o arquivo <code>globals.css</code>:</p>
                         </div>
-                        <CodeArea link='globals-example.css' />
+                        <CodeArea link='/ecosystem/tailwind/globals-example.css' />
                         <p>Será nesse arquivo onde o Tailwind injetará todas as classes utilitárias que serão utilizadas no projeto.</p>
                     </div>
                     <Divider variant='horizontal' color='secondary' className='w-full' />
@@ -54,11 +54,11 @@ export default function Tailwind() {
                         <p className='text-secondary'>É fortemente recomendada a instalação da extensão Tailwind CSS IntelliSense no Visual Studio Code para facilitar a utilização das classes utilitárias, a extensão tem autocomplete, linting, preview e highlighting de sintaxe.</p>
                         <p>Com o Tailwind CSS configurado, as classes utilitárias podem ser aplicadas diretamente no HTML. Por exemplo:</p>
                     </div>
-                    <CodeArea link='tailwindcss-example.html' />
+                    <CodeArea link='/ecosystem/tailwind/tailwindcss-example.html' />
                     <p>O código acima é equivalente à ambos arquivos abaixo:</p>
                     <div className='flex flex-col space-y-4'>
-                        <CodeArea link='tailwindless-example.html' />
-                        <CodeArea link='tailwindless-example.css' />
+                        <CodeArea link='/ecosystem/tailwind/tailwindless-example.html' />
+                        <CodeArea link='/ecosystem/tailwind/tailwindless-example.css' />
                     </div>
                     <div className='flex flex-col space-y-4'>
                         <p>Por meio do Tailwind, conseguimos criar interfaces de usuário de forma mais rápida e eficiente, sem a necessidade de escrever CSS mais longo em arquivo separado, criando classes ou utilizando seletores de elementos.</p>
@@ -70,12 +70,12 @@ export default function Tailwind() {
                             <h2 id='customization' className='text-3xl'>Customização</h2>
                             <p>O Tailwind CSS permite a customização de cores, espaçamentos, tipografia, entre outros. Para isso, é necessário editar o arquivo de configuração do Tailwind CSS. Veja abaixo um exemplo de customização:</p>
                         </div>
-                        <CodeArea link='tailwind.config.ts' />
+                        <CodeArea link='/ecosystem/tailwind/tailwind.config.ts' />
                         <div className='flex flex-col space-y-4'>
                             <p>No arquivo acima, podemos ver a definição de onde o nosso conteúdo está, para que o Tailwind saiba onde deve ser aplicado. Assim como, vemos em destaque a customização das cores do tema do Tailwind CSS. As cores são definidas como variáveis CSS, que podem ser utilizadas diretamente no código.</p>
                             <p>Veja a definição das variáveis relacionadas ao arquivo acima (para o tema claro e escuro):</p>
                         </div>
-                        <CodeArea link='globals-example2.css' />
+                        <CodeArea link='/ecosystem/tailwind/globals-example2.css' />
                         <p className='text-secondary'>Este também é o método usado pelo Shadcn para customizar o Tailwind CSS.</p>
                     </div>
                     <Divider variant='horizontal' color='secondary' className='w-full' />
@@ -91,7 +91,7 @@ export default function Tailwind() {
                                 <li className='text-xl'>Modificadores de Estado:</li>
                                 <div className='flex flex-col space-y-6'>
                                     <p>Os modificadores de estado permitem a customização de classes utilitárias com base em estados, como hover, focus, active, disabled, entre outros. Por exemplo:</p>
-                                    <CodeArea link='modifiers-example.html' />
+                                    <CodeArea link='/ecosystem/tailwind/modifiers-example.html' />
                                     <ul className='list-disc list-inside space-y-2'>
                                         <li><code>hover:bg-blue-700</code>: Altera a cor do fundo do botão quando o cursor passa sobre ele.</li>
                                         <li><code>focus:ring-2</code>: Adiciona um anel ao redor do botão quando ele está em foco.</li>
@@ -111,7 +111,7 @@ export default function Tailwind() {
                                 <p className='text-secondary'>Você também pode criar classes utilitárias customizadas com base em tamanhos de tela, como explicado na seção de customização.</p>
                                 <div className='flex flex-col space-y-6'>
                                     <p>Veja um exemplo prático de modificadores responsivos:</p>
-                                    <CodeArea link='modifiers-example2.html' />
+                                    <CodeArea link='/ecosystem/tailwind/modifiers-example2.html' />
                                     <ul className='list-disc list-inside space-y-2'>
                                         <li><code>text-sm</code>: Define o tamanho do texto como <code>0.875rem</code> (14px) em telas por padrão.</li>
                                         <li><code>md:text-lg</code>: Define o tamanho do texto como <code>1.125rem</code> (18px) em telas médias (a partir de 768px).</li>
@@ -121,7 +121,7 @@ export default function Tailwind() {
                                 <li className='text-xl'>Modificadores para Modo Escuro</li>
                                 <div className='flex flex-col space-y-6'>
                                     <p>Os modificadores para modo escuro permitem a customização de classes utilitárias com base no modo de cor do sistema. Por exemplo:</p>
-                                    <CodeArea link='modifiers-example3.html' />
+                                    <CodeArea link='/ecosystem/tailwind/modifiers-example3.html' />
                                     <ul className='list-disc list-inside space-y-2'>
                                         <li><code>bg-white</code>: Define a cor de fundo como branco por padrão.</li>
                                         <li><code>dark:bg-gray-900</code>: Define a cor de fundo como cinza escuro em telas escuras.</li>
@@ -132,19 +132,19 @@ export default function Tailwind() {
                                 <li className='text-xl'>Modificadores de grupo</li>
                                 <div className='flex flex-col space-y-6'>
                                     <p>Os modificadores de grupo permitem a aplicação de classes utilitárias em um grupo de elementos. Por exemplo:</p>
-                                    <CodeArea link='modifiers-example4.html' />
+                                    <CodeArea link='/ecosystem/tailwind/modifiers-example4.html' />
                                     <p>A classe <code>group</code> no elemento pai permite que <code>group-hover:text-black</code> seja aplicado quando o pai estiver em estado <span className='italic'>hover</span>.</p>
                                 </div>
                                 <li className='text-xl'>Modificadores de Par (<span className='italic'>Peer Modifiers</span>)</li>
                                 <div className='flex flex-col space-y-6'>
                                     <p>Os modificadores <code>peer</code> permitem que elementos irmãos respondam a mudanças de estado em um elemento adjacente.</p>
-                                    <CodeArea link='modifiers-example5.html' />
+                                    <CodeArea link='/ecosystem/tailwind/modifiers-example5.html' />
                                     <p>Quando a caixa de seleção é marcada, <code>peer-checked:bg-blue-500</code> é aplicado ao elemento adjacente <code>label</code>.</p>
                                 </div>
                                 <li className='text-xl'>Variantes Arbitrárias</li>
                                 <div className='flex flex-col space-y-6'>
                                     <p>Os modificadores personalizados colchetes (<code>[]</code>), possibilitam a criação de classes utilitárias customizadas. Por exemplo:</p>
-                                    <CodeArea link='modifiers-example6.html' />
+                                    <CodeArea link='/ecosystem/tailwind/modifiers-example6.html' />
                                     <p>A classe <code>[&gt;p]:text-red-500</code> aplica a cor vermelha aos elementos <code>p</code> dentro do elemento pai.</p>
                                 </div>
                             </ol>

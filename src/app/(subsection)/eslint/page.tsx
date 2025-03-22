@@ -53,7 +53,7 @@ export default function ESLint() {
                             <h2 id='settings' className='text-3xl'>Configuração</h2>
                             <p>O ESLint é altamente configurável, permitindo personalizar seu comportamento conforme as necessidades do seu projeto. A configuração geralmente é armazenada em um arquivo chamado <code>.eslintrc.js</code>, <code>.eslintrc.json</code> ou <code>.eslintrc.yaml</code>; no nosso caso, em <code>eslint.config.mjs</code>, um arquivo de modulo de Javascript. As configurações no nosso projeto são as seguintes:</p>
                         </div>
-                        <CodeArea link='eslint.config.mjs' />
+                        <CodeArea link='/ecosystem/eslint/eslint.config.mjs' />
                         <p>A maioria das configurações são importadas de pacotes de regras predefinidas, <code>next/core-web-vitals</code> e <code>next/typescript</code>. Você também pode adicionar regras personalizadas ao arquivo de configuração para atender às necessidades específicas do seu projeto.</p>
                         <p className='text-secondary'>Aprenda mais sobre as configurações disponíveis no <VisitLink href='https://eslint.org/docs/latest/use/configure/'>guia de configuração do ESLint</VisitLink>.</p>
                     </div>
