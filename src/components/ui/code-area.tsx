@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useCallback } from 'react'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { Clipboard, Download } from 'lucide-react'
@@ -54,7 +54,7 @@ const CodeArea: React.FC<CodeAreaProps> = ({ link, code, copy = true, language, 
         return URL.createObjectURL(blob)
     }
 
-    async function fetchFileContent(link: string) {
+    const fetchFileContent = useCallback(async (link: string) => {
         try {
             const response = await fetch(`/api?link=${link}`)
             if (!response.ok) {
@@ -81,11 +81,11 @@ const CodeArea: React.FC<CodeAreaProps> = ({ link, code, copy = true, language, 
                 setError('Failed to fetch file content')
             }
         }
-    }
+    }, [])
 
     useEffect(() => {
         if (link) fetchFileContent(link)
-    }, [link])
+    }, [link, fetchFileContent])
 
     const handleCopy = () => {
         const formattedCode = (code || fileContent)?.replace(/\t/g, '    ')
