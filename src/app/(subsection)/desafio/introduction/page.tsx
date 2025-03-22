@@ -4,8 +4,17 @@ import PageIndex from '@/components/core/page-index/page-index'
 import type { Topic } from '@/types/topic'
 import { Divider } from '@/components/ui/divider'
 import { Project } from '@/types/project'
-import { Typescript } from '@/components/ui/icons/typescript'
 import { ProjectCard } from '@/components/ui/project-card'
+import { PiDogBold } from "react-icons/pi";
+import { GiConsoleController } from "react-icons/gi";
+import { MdAttachMoney } from "react-icons/md";
+import { FaHouseChimney } from "react-icons/fa6";
+import { PiStudentFill } from "react-icons/pi";
+import { GiTeacher } from "react-icons/gi";
+
+
+
+
 
 const topics: Topic[] = [
     { title: 'Introdução', href: 'introduction' },
@@ -17,38 +26,38 @@ const projects: Project[] = [
     {
         title: 'Ruralatinhas',
         description: 'Aplicativo móvel para adoção de animais.',
-        icon: <Typescript />,
-        href: '/ruralatinhas',
+        icon: <PiDogBold size={70}/>,
+        href: 'https://www.notion.so/seed-a-bit-tec/APP-Ruralatinhas-1ba1cc709e3f80199dbfc91b9f145ceb',
     },
     {
         title: 'Gamificação da Seed',
         description: 'Aplicativo móvel para gamificação da Seed a Bit.',
-        icon: <Typescript />,
-        href: '/gamificacao',
+        icon: <GiConsoleController size={70} />,
+        href: 'https://www.notion.so/seed-a-bit-tec/App-de-Gamifica-o-da-Seed-1ba1cc709e3f80f7a4b4c043716aab65',
     },
     {
-        title: 'Sistema de Pagamentos',
+        title: 'SeedBank',
         description: 'Sistema Web para gerir os pagamentos que devem ser feitos para a Seed a Bit.',
-        icon: <Typescript />,
-        href: '/pagamentos',
+        icon: <MdAttachMoney size={70} />,
+        href: 'https://www.notion.so/seed-a-bit-tec/SeedBank-1ba1cc709e3f80d8b0bbc10ed8793108',
     },
     {
         title: 'Aplicativo da Imobiliária',
         description: 'Aplicativo móvel para uma imobiliária.',
-        icon: <Typescript />,
-        href: '/imobiliaria',
+        icon: <FaHouseChimney size={70}/>,
+        href: 'https://www.notion.so/seed-a-bit-tec/Aplicativo-para-Gest-o-de-Loca-o-Imobili-ria-1ba1cc709e3f80aca713e71d74200249',
     },
     {
         title: 'Gerenciamento de Bolsistas',
         description: 'Sistema Web voltado para o gerenciamento de bolsistas da UFRPE.',
-        icon: <Typescript />,
-        href: '/bolsistas',
+        icon: <PiStudentFill size={70}/>,
+        href: 'https://www.notion.so/seed-a-bit-tec/Plataforma-de-Monitoramento-de-Bolsistas-e-Projetos-Acad-micos-1ba1cc709e3f80008ecffe2093c48b58',
     },
     {
         title: 'Sistema de Matriculas',
         description: 'Sistema Web voltado para matriculas em cursos.',
-        icon: <Typescript />,
-        href: '/matriculas',
+        icon: <GiTeacher size={70}/>,
+        href: 'https://www.notion.so/seed-a-bit-tec/Sistema-de-Matriculas-2-0-1ba1cc709e3f805e834ded26994ca6cf',
     },
 ]
 
@@ -69,22 +78,22 @@ export default function Tailwind() {
 
                         <div className='flex flex-col space-y-4'>
                             <h2 id='requirements' className='text-2xl'>Levantamento de Requisitos</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste ratione incidunt impedit illo dignissimos facere, possimus voluptates consequuntur sapiente, aliquid, optio eius nihil enim aut nulla eum a provident! Dolore.</p>
+                        <p>Nessa etapa, são identificadas as necessidades do projeto, definindo escopo, funcionalidades e expectativas. A equipe discute os objetivos, limitações e principais desafios, garantindo um entendimento claro antes de seguir para o desenvolvimento.</p>
                         </div>
 
                         <div className='flex flex-col space-y-4'>
                             <h2 id='prototyping' className='text-2xl'>Prototipação</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste ratione incidunt impedit illo dignissimos facere, possimus voluptates consequuntur sapiente, aliquid, optio eius nihil enim aut nulla eum a provident! Dolore.</p>
+                        <p>Com os requisitos estabelecidos, são criados wireframes e protótipos para representar visualmente a interface e o fluxo do sistema. Essa fase permite validar ideias, ajustar detalhes antes da implementação e garantir uma experiência intuitiva para o usuário.</p>
                         </div>
 
                         <div className='flex flex-col space-y-4'>
                             <h2 id='prototyping' className='text-2xl'>Desenvolvimento</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste ratione incidunt impedit illo dignissimos facere, possimus voluptates consequuntur sapiente, aliquid, optio eius nihil enim aut nulla eum a provident! Dolore.</p>
+                        <p>A fase de codificação transforma o protótipo em um sistema funcional. São estruturadas as telas, implementadas regras de negócio e integrados serviços necessários. A equipe segue um planejamento ágil, revisando e ajustando o código conforme necessário.</p>
                         </div>
 
                         <div className='flex flex-col space-y-4'>
                             <h2 id='prototyping' className='text-2xl'>Testes</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste ratione incidunt impedit illo dignissimos facere, possimus voluptates consequuntur sapiente, aliquid, optio eius nihil enim aut nulla eum a provident! Dolore.</p>
+                        <p>Com o sistema desenvolvido, são realizados testes para verificar a funcionalidade, desempenho e usabilidade. Identificam-se possíveis erros, garantindo que tudo funcione corretamente antes da entrega final. Ajustes e refinamentos são feitos conforme necessário para aprimorar a qualidade do produto.</p>
                         </div>
                         
                     </div>

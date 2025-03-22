@@ -2,6 +2,7 @@ import type { SidebarEntry } from '@/types/sidebar'
 import { Ecosystem } from '@/components/ui/icons/ecosystem'
 import { ReactJS } from '@/components/ui/icons/reactjs'
 import { NextJS } from '@/components/ui/icons/nextjs'
+import { FaLaptopCode } from "react-icons/fa";
 
 const sidebar: SidebarEntry[] = [
     {
@@ -108,7 +109,7 @@ const sidebar: SidebarEntry[] = [
         id: 3,
         title: 'Desafio',
         href: '/desafio/introduction',
-        icon: <ReactJS/>,
+        icon: <FaLaptopCode/>,
         items: [
             {
                 id: 15,
@@ -117,14 +118,10 @@ const sidebar: SidebarEntry[] = [
             },
             {
                 id: 16,
-                title: 'Etapas',
+                title: 'Monitorias',
                 href: '/desafio/steps',
             },
-            {
-                id: 15,
-                title: 'Projetos',
-                href: '/desafio/projects',
-            },
+            
         ],
 
     },
