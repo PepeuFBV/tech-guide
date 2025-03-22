@@ -2,6 +2,7 @@ import React from 'react'
 import PageIndex from '@/components/core/page-index/page-index'
 import PathDisplay from '@/components/core/path-display'
 import { Divider } from '@/components/ui/divider'
+import { CodeArea } from '@/components/ui/code-area'
 import type { Topic } from '@/types/topic'
 
 const topics: Topic[] = [
@@ -28,11 +29,14 @@ export default function Introduction() {
                         <p>Além disso, Next.js traz benefícios como roteamento automático baseado em arquivos, suporte a API Routes para construção de backends leves e integração simplificada com diversas ferramentas do ecossistema.</p>
                     </div>
                     <Divider variant='horizontal' color='secondary' className='w-full' />
-                    <div className='flex flex-col space-y-4'>
-                        <h2 id='server-side-rendering' className='text-3xl'>Renderização Server Side - <span className='italic'>SSR</span></h2>
-                        <p>O Server-Side Rendering (<span className='italic'>SSR</span>) é uma das principais funcionalidades do Next.js e permite que as páginas sejam renderizadas no servidor antes de serem enviadas ao navegador do usuário. Isso melhora o SEO, pois os motores de busca conseguem indexar o conteúdo da página mais facilmente. Além disso, o <span className='italic'>SSR</span> reduz o tempo de carregamento inicial, pois o usuário recebe uma página já processada pelo servidor.</p>
-                        <p className='text-secondary'>Imagine que páginas de lado servidor são devolvidas ao navegador já com o HTML gerado, enquanto páginas de lado cliente são devolvidas ao navegador com um esqueleto HTML que é preenchido com JavaScript.</p>
-                        <p>Esse tipo de tratamento é essencial para a otimização de páginas web, permitindo que o servidor faça o processamento pesado e entregue ao cliente apenas o que é necessário para a renderização da página.</p>
+                    <div className='flex flex-col space-y-6'>
+                        <div className='flex flex-col space-y-4'>
+                            <h2 id='server-side-rendering' className='text-3xl'>Renderização Server Side - <span className='italic'>SSR</span></h2>
+                            <p>O Server-Side Rendering (<span className='italic'>SSR</span>) é uma das principais funcionalidades do Next.js e permite que as páginas sejam renderizadas no servidor antes de serem enviadas ao navegador do usuário. Isso melhora o SEO, pois os motores de busca conseguem indexar o conteúdo da página mais facilmente. Além disso, o <span className='italic'>SSR</span> reduz o tempo de carregamento inicial, pois o usuário recebe uma página já processada pelo servidor.</p>
+                            <p className='text-secondary'>Imagine que páginas de lado servidor são devolvidas ao navegador já com o HTML gerado, enquanto páginas de lado cliente são devolvidas ao navegador com um esqueleto HTML que é preenchido com JavaScript.</p>
+                            <p>Esse tipo de tratamento é essencial para a otimização de páginas web, permitindo que o servidor faça o processamento pesado e entregue ao cliente apenas o que é necessário para a renderização da página. O Next oferece suporte a essa funcionalidade de forma nativa, facilitando a implementação de SSR em nossos projetos, entretanto, caso seja necessária a criação de um componente ou página específica que seja <span>client-side</span>, é possivel fazer isso de forma simples e eficiente, veja abaixo:</p>
+                        </div>
+                        <CodeArea link='/next/introduction/client-side.tsx' />
                     </div>
                 </div>
             </div>
