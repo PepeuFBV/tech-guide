@@ -21,7 +21,7 @@ export default function Components() {
                 <PathDisplay />
                 <div className='flex flex-col space-y-10'>
                     <div className='flex flex-col space-y-4'>
-                        <h1 id='components' className='text-4xl font-bold'>Componentes</h1>
+                        <h1 id='components' className='text-4xl'>Componentes</h1>
                         <p className='text-secondary'>O coração do React. Um componente é uma função que retorna HTML e que tem um escopo próprio (de estilo e estado). É o que permite você reutilizar trechos de HTML na sua interface.</p>
                     </div>
                     <Divider variant='horizontal' color='secondary' className='w-full' />

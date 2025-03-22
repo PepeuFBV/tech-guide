@@ -19,7 +19,7 @@ export default function Props() {
                 <PathDisplay />
                 <div className='flex flex-col space-y-10'>
                     <div className='flex flex-col space-y-4'>
-                        <h1 id='props' className='text-4xl font-bold'>Props</h1>
+                        <h1 id='props' className='text-4xl'>Props</h1>
                         <p className='text-secondary'>No React, componentes podem ser customizados de diversas formas. Uma delas são as Props. O termo vem de <i>propriedades</i> e são pequenas configurações que passamos para um componente para alterar seu comportamento. Se componentes são funções, Props são como os parâmetros dessas funções.</p>
                     </div>
                     <Divider variant='horizontal' color='secondary' className='w-full' />

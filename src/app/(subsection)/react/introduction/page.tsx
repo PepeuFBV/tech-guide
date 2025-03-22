@@ -19,7 +19,7 @@ export default function Introduction() {
                 <PathDisplay />
                 <div className='flex flex-col space-y-10'>
                     <div className='flex flex-col space-y-4'>
-                        <h1 id='introduction' className='text-4xl font-bold'>Introdução ao React</h1>
+                        <h1 id='introduction' className='text-4xl'>Introdução ao React</h1>
                         <p className='text-secondary'>HTML e CSS são tecnologias bem simples no geral. Porém, qualquer aspirante a desenvolvedor frontend tem aspirações maiores do que um arquivo de texto pode oferecer. Tudo isso é possível utilizando Javascript, mas o quão válido, escalável e realmente produtivo é implementar tarefas ultra-complexas utilizando apenas JS? Nem um pouco. Nessa sessão, abordaremos algumas noções básicas de React, framework que facilita o desenvolvimento de páginas web complexas.</p>
                     </div>
                     <Divider variant='horizontal' color='secondary' className='w-full' />

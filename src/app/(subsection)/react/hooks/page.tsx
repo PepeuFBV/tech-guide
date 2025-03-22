@@ -22,7 +22,7 @@ export default function Hooks() {
                 <PathDisplay />
                 <div className='flex flex-col space-y-10'>
                     <div className='flex flex-col space-y-4'>
-                        <h1 id='introduction' className='text-4xl font-bold'>Introdução</h1>
+                        <h1 id='introduction' className='text-4xl'>Introdução</h1>
                         <p>O React nos fornece uma série de hooks para manipular o ciclo de vida dos componentes, estados e contextos. Eles são funções que permitem adicionar funcionalidades a componentes funcionais, que antes só eram possíveis em componentes de classe. Neste guia, vamos abordar os principais hooks e como utilizá-los em suas aplicações.</p>
                         <p className='text-secondary'>Os hooks nos permitem realmente utilizar a principal proposta do React, montar componentes reutilizaveis e <span className='font-bold'>reativos</span>.</p>
                     </div>

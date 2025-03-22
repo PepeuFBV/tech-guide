@@ -23,7 +23,7 @@ export default function Typescript() {
                 <PathDisplay />
                 <div className='flex flex-col space-y-10'>
                     <div className='flex flex-col space-y-4'>
-                        <h1 id='introduction' className='text-4xl font-bold'>Introdução</h1>
+                        <h1 id='introduction' className='text-4xl'>Introdução</h1>
                         <p>Agora aprenderemos sobre TypeScript, uma importante ferramenta para desenvolvedores que desejam escrever códigos mais seguros e com menos erros. Abaixo discutiremos mais sobre a linguagem e como a usar de forma produtiva em seus projetos.</p>
                     </div>
                     <Divider variant='horizontal' color='secondary' className='w-full' />
