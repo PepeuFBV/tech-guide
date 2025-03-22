@@ -13,26 +13,8 @@ const topics: Topic[] = [
     { title: 'Configuração', href: 'settings' },
 ]
 
-const code: string[] = [`npx create-next-app@latest`,
-    `node -v
-npm -v`,
-    `npm install next@latest react@latest react-dom@latest`,
-    `{
-    "scripts": {
-        "dev": "next dev",
-        "build": "next build",
-        "start": "next start"
-    }
-}`, `export default function RootLayout({ children, }: { children: React.ReactNode }) {
-    return (
-        <html lang="en">
-            <body>{children}</body>
-        </html>
-    )
-}`, `export default function Page() {
-    return <h1>Hello, Next.js!</h1>
-}`
-]
+const code: string[] = [`node -v
+npm -v`]
 
 export default function Introduction() {
     return (
@@ -51,7 +33,7 @@ export default function Introduction() {
                             <p>É necessário que se tenha o Node e o npm instalados em sua máquina para que o Next.js funcione corretamente. O Node deve ser da versão 18.18 ou superior.</p>
                             <p>Para verificar se o Node e o npm estão instalados, execute os comandos abaixo no terminal:</p>
                         </div>
-                        <CodeArea code={code[0]} language='bash' />
+                        <CodeArea code={`npx create-next-app@latest`} language='bash' />
                     </div>
                     <Divider variant='horizontal' color='secondary' className='w-full' />
                     <div className='flex flex-col space-y-6'>
@@ -63,7 +45,7 @@ export default function Introduction() {
                             <h3 className='text-2xl'>Instalação Automática</h3>
                             <p>O nosso projeto já está completamente configurado e pronto para ser utilizado. Porém, caso você deseje criar um novo projeto, podemos criá-lo com a CLI do Next.js.</p>
                         </div>
-                        <CodeArea code={code[1]} language='bash' />
+                        <CodeArea code={code[0]} language='bash' />
                         <div className='flex flex-col space-y-4'>
                             <p>A CLI do Next apresentará algumas opções para a criação do seu projeto, para o template padrão, basta aceitar as opções padrão apresentadas.</p>
                             <p className='text-secondary'>No nosso projeto, utilizamos o sistema de roteamento mais recente, por meio do diretório <code>/app</code> ao invés de <code>/pages</code>.</p>
@@ -73,7 +55,7 @@ export default function Introduction() {
                             <p>Também podemos instalar o Next.js manualmente à um projeto. Primeiramente execute <code>npm init -y</code> para criar um arquivo <code>package.json</code> em seu projeto.</p>
                             <p>Instalaremos as dependências necessárias para o Next.js funcionar corretamente.</p>
                         </div>
-                        <CodeArea code={code[2]} language='bash' />
+                        <CodeArea code={`npm install next@latest react@latest react-dom@latest`} language='bash' />
                         <p>Em seguida, adicione os scripts necessários ao seu arquivo <code>package.json</code>:</p>
                         <CodeArea link='/next/installation-and-settings/scripts.json' />
                         <div className='flex flex-col space-y-4'>
