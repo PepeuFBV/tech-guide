@@ -91,6 +91,11 @@ const sidebar: SidebarEntry[] = [
                 title: 'Instalação e Configuração',
                 href: '/next/installation-and-settings',
             },
+            {
+                id: 13,
+                title: 'Roteamento',
+                href: '/next/routing',
+            }
         ],
     }
 ]
