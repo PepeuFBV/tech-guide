@@ -2,6 +2,7 @@ import type { SidebarEntry } from '@/types/sidebar'
 import { Ecosystem } from '@/components/ui/icons/ecosystem'
 import { ReactJS } from '@/components/ui/icons/reactjs'
 import { NextJS } from '@/components/ui/icons/nextjs'
+import { Github } from '@/components/ui/icons/github'
 
 const sidebar: SidebarEntry[] = [
     {
@@ -95,6 +96,24 @@ const sidebar: SidebarEntry[] = [
                 id: 13,
                 title: 'Roteamento',
                 href: '/next/routing',
+            }
+        ],
+    },
+    {
+        id: 3,
+        title: 'Git e GitHub',
+        href: '/git/introduction',
+        icon: <Github size={16} />,
+        items: [
+            {
+                id: 14,
+                title: 'Introdução',
+                href: '/git/introduction',
+            },
+            {
+                id: 15,
+                title: 'Commits Semânticos',
+                href: '/git/semantic-commits',
             }
         ],
     }
