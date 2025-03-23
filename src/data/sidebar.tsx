@@ -2,6 +2,8 @@ import type { SidebarEntry } from '@/types/sidebar'
 import { Ecosystem } from '@/components/ui/icons/ecosystem'
 import { ReactJS } from '@/components/ui/icons/reactjs'
 import { NextJS } from '@/components/ui/icons/nextjs'
+import { Github } from '@/components/ui/icons/github'
+import { FaLaptopCode } from 'react-icons/fa'
 
 const sidebar: SidebarEntry[] = [
     {
@@ -70,8 +72,8 @@ const sidebar: SidebarEntry[] = [
             },
             {
                 id: 10,
-                title: 'Estado',
-                href: '/react/state',
+                title: 'Hooks',
+                href: '/react/hooks',
             },
         ],
     },
@@ -88,21 +90,53 @@ const sidebar: SidebarEntry[] = [
             },
             {
                 id: 12,
-                title: 'Instalação',
-                href: '/next/installation',
+                title: 'Instalação e Configuração',
+                href: '/next/installation-and-settings',
             },
             {
                 id: 13,
-                title: 'Configuração',
-                href: '/next/configuration',
-            },
+                title: 'Roteamento',
+                href: '/next/routing',
+            }
+        ],
+    },
+    {
+        id: 3,
+        title: 'Git e GitHub',
+        href: '/git/introduction',
+        icon: <Github size={16} />,
+        items: [
             {
                 id: 14,
-                title: 'Features',
-                href: '/next/features',
+                title: 'Introdução',
+                href: '/git/introduction',
             },
+            {
+                id: 15,
+                title: 'Commits Semânticos',
+                href: '/git/semantic-commits',
+            }
         ],
-    }
+
+    },
+    {
+        id: 4,
+        title: 'Desafio',
+        href: '/desafio/introduction',
+        icon: <FaLaptopCode />,
+        items: [
+            {
+                id: 16,
+                title: 'Introdução',
+                href: '/desafio/introduction',
+            },
+            // {
+            //     id: 17,
+            //     title: 'Monitorias',
+            //     href: '/desafio/steps',
+            // },
+        ],
+    },
 ]
 
 export { sidebar }
