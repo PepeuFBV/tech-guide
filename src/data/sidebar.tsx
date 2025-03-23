@@ -3,6 +3,7 @@ import { Ecosystem } from '@/components/ui/icons/ecosystem'
 import { ReactJS } from '@/components/ui/icons/reactjs'
 import { NextJS } from '@/components/ui/icons/nextjs'
 import { FaLaptopCode } from "react-icons/fa";
+import { Github } from '@/components/ui/icons/github'
 
 const sidebar: SidebarEntry[] = [
     {
@@ -61,18 +62,18 @@ const sidebar: SidebarEntry[] = [
             },
             {
                 id: 8,
-                title: 'Instalação',
-                href: '/react/installation',
+                title: 'Componentes',
+                href: '/react/components',
             },
             {
                 id: 9,
-                title: 'Configuração',
-                href: '/react/configuration',
+                title: 'Props',
+                href: '/react/props',
             },
             {
                 id: 10,
-                title: 'Features',
-                href: '/react/features',
+                title: 'Hooks',
+                href: '/react/hooks',
             },
         ],
     },
@@ -89,35 +90,48 @@ const sidebar: SidebarEntry[] = [
             },
             {
                 id: 12,
-                title: 'Instalação',
-                href: '/next/installation',
+                title: 'Instalação e Configuração',
+                href: '/next/installation-and-settings',
             },
             {
                 id: 13,
-                title: 'Configuração',
-                href: '/next/configuration',
-            },
+                title: 'Roteamento',
+                href: '/next/routing',
+            }
+        ],
+    },
+    {
+        id: 3,
+        title: 'Git e GitHub',
+        href: '/git/introduction',
+        icon: <Github size={16} />,
+        items: [
             {
                 id: 14,
-                title: 'Features',
-                href: '/next/features',
+                title: 'Introdução',
+                href: '/git/introduction',
             },
+            {
+                id: 15,
+                title: 'Commits Semânticos',
+                href: '/git/semantic-commits',
+            }
         ],
 
     },
     {
-        id: 3,
+        id: 4,
         title: 'Desafio',
         href: '/desafio/introduction',
         icon: <FaLaptopCode/>,
         items: [
             {
-                id: 15,
+                id: 16,
                 title: 'Introdução',
                 href: '/desafio/introduction',
             },
             {
-                id: 16,
+                id: 17,
                 title: 'Monitorias',
                 href: '/desafio/steps',
             },

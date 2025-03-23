@@ -14,55 +14,18 @@ const topics: Topic[] = [
     { title: 'Scripts', href: 'scripts' },
 ]
 
+const code: string[] = [`node - v
+npm - v`
+]
+
 export default function Node() {
-
-    const code = [`node -v
-npm -v`, `{
-    "name": "nextjs-react-typescript",
-    "version": "0.1.0",
-    "private": true,
-    "scripts": {
-        "dev": "next dev",
-        "build": "next build",
-        "start": "next start",
-        "lint": "next lint",
-        "clean-dev": "rmdir /s /q .next && npm run dev",
-        "clean-build": "rmdir /s /q .next && npm run build",
-        "clean-install": "rmdir /s /q node_modules && npm ci",
-        "prepare": "husky"
-    },
-    "dependencies": {
-        "clsx": "^2.1.1",
-        "next": "15.1.7",
-        "react": "^19.0.0",
-        "react-dom": "^19.0.0",
-        "tailwind-merge": "^3.0.2"
-    },
-    "devDependencies": {
-        "@babel/preset-env": "^7.26.9",
-        "@babel/preset-react": "^7.26.3",
-        "@babel/preset-typescript": "^7.26.0",
-        "@eslint/eslintrc": "^3",
-        "@types/node": "^20",
-        "@types/react": "^19",
-        "@types/react-dom": "^19",
-        "eslint": "^9",
-        "eslint-config-next": "15.1.7",
-        "husky": "^9.1.7",
-        "postcss": "^8",
-        "tailwindcss": "^3.4.1",
-        "typescript": "^5"
-    }
-}
-`]
-
     return (
         <div className='w-full h-full flex items-start justify-start md:space-x-10'>
             <div className='w-full md:w-[75%] lg:w-[80%] mt-5 md:mt-0 flex flex-col justify-center space-y-3 px-3 md:px-10'>
                 <PathDisplay />
                 <div className='flex flex-col space-y-10'>
                     <div className='flex flex-col space-y-4'>
-                        <h1 id='introduction' className='text-4xl font-bold'>Introdução</h1>
+                        <h1 id='introduction' className='text-4xl'>Introdução</h1>
                         <p>Agora é a hora de aprender sobre o Node.js, um ambiente de execução JavaScript server-side eficiente e popular.</p>
                         <p className='text-secondary'>O Node será melhor abordado em seções futuras do guia, veremos como utilizar o Node Package Manager (NPM) e como configurar o ambiente de desenvolvimento de template.</p>
                     </div>
@@ -79,7 +42,7 @@ npm -v`, `{
                             <p>Para instalar o <VisitLink href='https://nodejs.org/en' rel='noopener' target='_blank'>Node.js</VisitLink> vá até o site oficial e baixe a versão <span className='italic'>LTS</span> (Long Term Support) para o seu sistema operacional. O Node.js é instalado juntamente com o NPM (Node Package Manager), que é um gerenciador de pacotes JavaScript.</p>
                             <p>Após a instalação, você poderá verificar se o Node foi instalado corretamente através do terminal.</p>
                         </div>
-                        <CodeArea code={code[0]} language='bash' showLineNumbers={false} />
+                        <CodeArea code={code[0]} language='bash' />
                         <p className='text-secondary'>Há também outros gerenciadores de pacotes JavaScript, como o Yarn ou Bun. No entanto, o NPM é o mais utilizado e é instalado automaticamente com o Node.js. Pesquise mais sobre essas ferramentas e escolha a que melhor se adequa às suas preferências.</p>
                     </div>
                     <Divider variant='horizontal' color='secondary' className='w-full' />
@@ -90,7 +53,7 @@ npm -v`, `{
                             <p>Os pacotes JavaScript são bibliotecas de código JavaScript que você pode usar em seus projetos. Eles são publicados no NPM por desenvolvedores de todo o mundo e podem ser instalados em seus projetos com um simples comando.</p>
                             <p>Podemos rapidamente baixar todas as dependências de um projeto e executar scripts com o comando. Veja o comando abaixo, o mesmo serve para baixar todas as dependências de um projeto, definidas no arquivo <code>package.json</code>:</p>
                         </div>
-                        <CodeArea code={`npm install`} language='bash' showLineNumbers={false} />
+                        <CodeArea code={`npm install`} language='bash' />
                         <div className='flex flex-col space-y-4'>
                             <p>O comando acima criará um arquivo <code>package-lock.json</code> que contém a versão exata de cada pacote instalado. Isso garante que o projeto seja reproduzível em diferentes ambientes e evita problemas de compatibilidade. Além disso, cria o diretório <code>node_modules</code> que contém todos os pacotes instalados.</p>
                         </div>
@@ -98,7 +61,7 @@ npm -v`, `{
                             <h3 className='text-2xl'><code>package.json</code></h3>
                             <p>O arquivo <code>package.json</code> é um arquivo de manifesto para um projeto Node.js. Ele contém metadados sobre o projeto, como nome, versão, descrição, scripts, dependências e muito mais. O NPM usa o arquivo <code>package.json</code> para instalar pacotes, executar scripts e gerenciar dependências.</p>
                         </div>
-                        <CodeArea title='package.json' downloadLink='/files/package.json' code={code[1]} language='json' />
+                        <CodeArea link='/ecosystem/node/package.json' />
                         <div className='flex flex-col space-y-4'>
                             <p>Como você pode ver, o arquivo <code>package.json</code> contém informações sobre o projeto, como nome, versão, scripts e dependências. Você pode personalizar o arquivo <code>package.json</code> para atender às necessidades do seu projeto. Veja a seguir uma descrição dos campos mais comuns do arquivo <code>package.json</code>:</p>
                             <ul className='list-disc list-inside space-y-2'>
@@ -129,7 +92,7 @@ npm -v`, `{
                             </ul>
                             <p>Rode os comandos acima com:</p>
                         </div>
-                        <CodeArea code={`npm run [command]`} language='bash' showLineNumbers={false} />
+                        <CodeArea code={`npm run [command]`} language='bash' />
                         <p className='text-secondary'>Recomenda-se a execução de <code>npm run lint</code> e <code>npm run build</code> antes do envio de uma PR para o repositório. Isso garante que o código esteja funcionando corretamente e seguindo os padrões definidos.</p>
                     </div>
                 </div>

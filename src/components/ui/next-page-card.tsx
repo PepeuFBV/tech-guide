@@ -1,12 +1,12 @@
 'use client'
 
-import React, { useState } from 'react'
+import React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import type { SidebarItem } from '@/types/sidebar'
 import { sidebar } from '@/data/sidebar'
-import { cn } from '@/utils/lib/tailwind-merge'
 import { getFirstNameFromPathname } from '@/utils/string'
+import { cn } from '@/utils/lib/tailwind-merge'
 
 interface PageCardProps {
     previous?: boolean
@@ -14,7 +14,6 @@ interface PageCardProps {
 }
 const PageCard: React.FC<PageCardProps> = ({ previous = false, className }) => {
     const pathname = usePathname()
-    const [isHover, setIsHover] = useState<boolean>(false)
 
     function calculatePage(pathname: string, previous: boolean): SidebarItem | null {
         const topics: SidebarItem[] = sidebar.flatMap((section) => section.items).filter((item): item is SidebarItem => item !== undefined)
@@ -49,11 +48,11 @@ const PageCard: React.FC<PageCardProps> = ({ previous = false, className }) => {
     const flexDirection: string = previous ? 'items-start' : 'items-end'
 
     return (
-        <Link href={href} className='text-sidebar-button-active' onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}>
-            <div className={cn('w-40 md:w-48 flex items-center justify-between px-6 py-4 border border-muted rounded-lg shadow-md', className)}>
+        <Link href={href} className='text-sidebar-button-active'>
+            <div className={cn('w-40 md:w-48 flex items-center justify-between px-6 py-4 border border-muted rounded-lg shadow-md group', className)}>
                 <div className={cn('w-full flex flex-col space-y-1', flexDirection)}>
-                    <p className='text-xs font-bold text-secondary '>{title}</p>
-                    <p className={isHover ? 'underline' : ''}>{pageTitle}</p>
+                    <p className='text-xs font-bold text-secondary'>{title}</p>
+                    <p className='group-hover:underline'>{pageTitle}</p>
                 </div>
             </div>
         </Link>

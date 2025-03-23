@@ -15,13 +15,6 @@ const eslintConfig = [
         rules: {
             'react/no-unescaped-entities': 0,
         },
-        ignores: [
-            'node_modules/',
-            'dist/',
-            'build/',
-            '*.min.js',
-            'public/**'
-        ],
     },
 ]
 
