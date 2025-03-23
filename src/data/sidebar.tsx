@@ -130,12 +130,11 @@ const sidebar: SidebarEntry[] = [
                 title: 'Introdução',
                 href: '/desafio/introduction',
             },
-            {
-                id: 17,
-                title: 'Monitorias',
-                href: '/desafio/steps',
-            },
-            
+            // {
+            //     id: 17,
+            //     title: 'Monitorias',
+            //     href: '/desafio/steps',
+            // },
         ],
     },
 ]
