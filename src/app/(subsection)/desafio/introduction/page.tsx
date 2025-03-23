@@ -90,9 +90,9 @@ export default function Tailwind() {
                     </div>
                     <Divider variant='horizontal' color='secondary' className='w-full' />
                     <div className='flex flex-col space-y-4'>
-                    <h1 id="projects" className='text-4xl'>Projetos</h1>
-                    <p className='text-gray-300'>Clique no projeto para ver os detalhes</p>
-                    <div className='grid col-span-1 md:col-span-2 xl:grid-cols-3 gap-4'>
+                        <h1 id='projects' className='text-4xl'>Projetos</h1>
+                        <p className='text-gray-300'>Clique no projeto para ver os detalhes! (Notion)</p>
+                        <div className='grid col-span-1 md:col-span-2 xl:grid-cols-3 gap-4'>
                             {projects.map((project, index) => (
                                 <ProjectCard key={index} project={project} />
                             ))}
