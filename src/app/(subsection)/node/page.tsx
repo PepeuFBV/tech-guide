@@ -25,7 +25,7 @@ export default function Node() {
                 <PathDisplay />
                 <div className='flex flex-col space-y-10'>
                     <div className='flex flex-col space-y-4'>
-                        <h1 id='introduction' className='text-4xl font-bold'>Introdução</h1>
+                        <h1 id='introduction' className='text-4xl'>Introdução</h1>
                         <p>Agora é a hora de aprender sobre o Node.js, um ambiente de execução JavaScript server-side eficiente e popular.</p>
                         <p className='text-secondary'>O Node será melhor abordado em seções futuras do guia, veremos como utilizar o Node Package Manager (NPM) e como configurar o ambiente de desenvolvimento de template.</p>
                     </div>

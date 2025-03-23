@@ -19,7 +19,7 @@ export default function Settings() {
                 <PathDisplay />
                 <div className='flex flex-col space-y-10'>
                     <div className='flex flex-col space-y-4'>
-                        <h1 id='introduction' className='text-4xl font-bold'>Introdução</h1>
+                        <h1 id='introduction' className='text-4xl'>Introdução</h1>
                         <p>É importante o entendimento dos diretórios do projeto, para que seja possivel a manutenção e se manter os padrões de projeto. Você também pode configurar o seu projeto de acordo com suas preferências, como alterar a versão, nome, metadados, etc.</p>
                         <p className='text-secondary'>Alguns arquivos de configuração serão abordados mais adiante, em outras seções.</p>
                     </div>

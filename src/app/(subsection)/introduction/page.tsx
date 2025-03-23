@@ -81,7 +81,7 @@ npm install`
                 <PathDisplay />
                 <div className='flex flex-col space-y-10'>
                     <div className='flex flex-col space-y-4'>
-                        <h1 id='introduction' className='text-4xl font-bold'>Introdução</h1>
+                        <h1 id='introduction' className='text-4xl'>Introdução</h1>
                         <p className='text-secondary'>Está parte do guia abordará o ecossistema de forma geral, apresentando as tecnologias abaixo, repósitorio e instalação do projeto.</p>
                     </div>
                     <Divider variant='horizontal' color='secondary' className='w-full' />
