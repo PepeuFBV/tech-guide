@@ -33,7 +33,7 @@ export default function Props() {
                 <PathDisplay />
                 <section id='introduction' className='flex flex-col gap-4'>
                     <h1 className='text-4xl'>Introdução</h1>
-                    <p>No decorrer do seu desenvolvimento e aprofundamento na linguagem e ferramentas apresentadas nesse guia, você sentirá a necessidade da utilização de algumas bibliotecas ou ferramentas adicionais, as mesmas serão apresentadas abaixo por meio de recomendações de uso; não é obrigatório o uso das ferramentas/bibliotecas abaixo.</p>
+                    <p>No decorrer do seu desenvolvimento e aprofundamento na linguagem e ferramentas apresentadas nesse guia, você sentirá a necessidade da utilização de algumas bibliotecas ou ferramentas adicionais, as mesmas serão apresentadas abaixo por meio de recomendações; não é obrigatório o uso das ferramentas/bibliotecas abaixo.</p>
                     <p className='text-secondary'>Use das recomendações com sabedoria e consciência, já que o uso incorreto das mesmas pode atrapalhar o desenvolvimento do software.</p>
                 </section>
                 <Divider variant='horizontal' color='secondary' className='w-full' />
