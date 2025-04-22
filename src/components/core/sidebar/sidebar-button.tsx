@@ -4,7 +4,6 @@ import React from 'react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { usePathname } from 'next/navigation'
-
 import { cva, type VariantProps } from 'class-variance-authority'
 import { cn } from '@/utils/lib/tailwind-merge'
 import { getFirstNameFromPathname } from '@/utils/string'
