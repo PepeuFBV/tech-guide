@@ -3,6 +3,7 @@ import { Ecosystem } from '@/components/ui/icons/ecosystem'
 import { ReactJS } from '@/components/ui/icons/reactjs'
 import { NextJS } from '@/components/ui/icons/nextjs'
 import { Github } from '@/components/ui/icons/github'
+import { Archive } from 'lucide-react'
 import { FaLaptopCode } from 'react-icons/fa'
 
 const sidebar: SidebarEntry[] = [
@@ -137,6 +138,19 @@ const sidebar: SidebarEntry[] = [
             // },
         ],
     },
+    {
+        id: 5,
+        title: 'Recomendações',
+        href: '/recommendations',
+        icon: <Archive size={16} />,
+        items: [
+            {
+                id: 17,
+                title: 'Jest',
+                href: '/recommendations/jest',
+            }
+        ]
+    }
 ]
 
 export { sidebar }
