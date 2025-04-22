@@ -19,7 +19,7 @@ const Sidebar: React.FC<SidebarProps> = ({ className }) => { // sidebar class fo
 
     return (
         <section className={cn('w-full bg-sidebar overflow-y-scroll sidebar', className)}>
-            <div className='mt-9 px-8 w-full h-full flex flex-col space-y-7'>
+            <div className='my-9 px-8 w-full h-full flex flex-col space-y-7'>
                 <div className='flex flex-col md:space-y-1'>
                     <Link passHref href='/'>
                         <Button
