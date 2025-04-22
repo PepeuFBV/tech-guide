@@ -97,22 +97,16 @@ npm install`
                         </div>
                     </div>
                     <Divider variant='horizontal' color='secondary' className='w-full' />
-                    <div className='flex flex-col space-y-6'>
-                        <div className='flex flex-col space-y-4'>
-                            <h2 id='installation' className='text-3xl'>Instalação</h2>
-                            <p className='text-secondary'>Para mais detalhes sobre as ferramentas acima veja as suas respectivas seções: <VisitLink href='/node'>Node</VisitLink></p>
-                        </div>
-                        <div className='flex flex-col space-y-4'>
-                            <h3 className='text-2xl'>Node e NPM</h3>
-                            <p>Para instalar o ecossistema, você precisará ter o <VisitLink href='/node'>Node</VisitLink> instalado em sua máquina. Com o mesmo instalado, você poderá instalar as tecnologias do ecossistema através do gerenciador de pacotes npm (node package manager) ou yarn (gerenciador de pacotes alternativo). Não se preocupe, o npm é instalado automaticamente com o Node.</p>
-                            <p>Para instalar o Node.js, acesse o site oficial [<VisitLink href='https://nodejs.org/en' rel='noopener' target='_blank'>aqui</VisitLink>] e baixe a versão <span className='italic'>LTS</span> (Long Term Support), está versão garante suporte a longo prazo e estabilidade. Após a instalação, você poderá verificar se o Node foi instalado corretamente através do terminal.</p>
-                        </div>
+                    <div className='flex flex-col space-y-4'>
+                        <h2 id='installation' className='text-3xl'>Instalação</h2>
+                        <p className='text-secondary'>Para mais detalhes sobre as ferramentas acima veja as suas respectivas seções: <VisitLink href='/node'>Node</VisitLink></p>
+                        <h3 className='text-2xl'>Node e NPM</h3>
+                        <p>Para instalar o ecossistema, você precisará ter o <VisitLink href='/node'>Node</VisitLink> instalado em sua máquina. Com o mesmo instalado, você poderá instalar as tecnologias do ecossistema através do gerenciador de pacotes npm (node package manager) ou yarn (gerenciador de pacotes alternativo). Não se preocupe, o npm é instalado automaticamente com o Node.</p>
+                        <p>Para instalar o Node.js, acesse o site oficial [<VisitLink href='https://nodejs.org/en' rel='noopener' target='_blank'>aqui</VisitLink>] e baixe a versão <span className='italic'>LTS</span> (Long Term Support), está versão garante suporte a longo prazo e estabilidade. Após a instalação, você poderá verificar se o Node foi instalado corretamente através do terminal.</p>
                         <CodeArea code={code[0]} language='bash' />
-                        <div className='flex flex-col space-y-4'>
-                            <h3 className='text-2xl'>Repositório</h3>
-                            <GithubWatchButton href="https://github.com/seedabit/react-next-guide/subscription" ariaLabel='Watch seedabit/react-next-guide on GitHub' showCount />
-                            <p>Para instalar o ecossistema, você pode clonar o repositório oficial do guia através do comando abaixo:</p>
-                        </div>
+                        <h3 className='text-2xl'>Repositório</h3>
+                        <GithubWatchButton href="https://github.com/seedabit/react-next-guide/subscription" ariaLabel='Watch seedabit/react-next-guide on GitHub' showCount />
+                        <p>Para instalar o ecossistema, você pode clonar o repositório oficial do guia através do comando abaixo:</p>
                         <CodeArea code={`git clone https://github.com/seedabit/nextjs-react-typescript.git`} language='bash' />
                         <p>Após clonar o repositório, você pode acessar a pasta do projeto e instalar as dependências do projeto através do comando:</p>
                         <CodeArea code={code[1]} language='bash' />
