@@ -100,7 +100,7 @@ npm install`
                     <div className='flex flex-col space-y-6'>
                         <div className='flex flex-col space-y-4'>
                             <h2 id='installation' className='text-3xl'>Instalação</h2>
-                            <p className='text-secondary'>Para mais detalhes sobre as ferramentas abaixo veja as suas respectivas seções: <VisitLink href='/node'>Node</VisitLink></p>
+                            <p className='text-secondary'>Para mais detalhes sobre as ferramentas acima veja as suas respectivas seções: <VisitLink href='/node'>Node</VisitLink></p>
                         </div>
                         <div className='flex flex-col space-y-4'>
                             <h3 className='text-2xl'>Node e NPM</h3>
