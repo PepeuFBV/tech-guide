@@ -5,6 +5,11 @@ import { Divider } from '@/components/ui/divider'
 import { Topic } from '@/types/topic'
 import type { Tech } from '@/types/tech'
 import { TechCard } from '@/components/ui/tech-card'
+import { Jest } from '@/components/ui/icons/jest'
+import { ShadcnUI } from '@/components/ui/icons/shadcnui'
+import { Zod } from '@/components/ui/icons/zod'
+import { GithubDesktop } from '@/components/ui/icons/github-desktop'
+import { Postman } from '@/components/ui/icons/postman'
 
 const topics: Topic[] = [
     { title: 'Introdução', href: 'introduction' },
@@ -15,14 +20,34 @@ const tech: Tech[] = [
     {
         title: 'Jest',
         description: 'Realize testes de todo tipo no seu software',
-        icon: <></>,
+        icon: <Jest />,
         href: '/recommendations/jest',
     },
     {
-        title: 'Shadcn',
-        description: 'Utilize e personalize componentes React de alta qualidade',
-        icon: <></>,
+        title: 'Shadcn UI',
+        description: 'Utilize e personalize componentes React de alta qualidade, criados com Radix UI e Tailwind CSS',
+        icon: <ShadcnUI />,
         href: '/recommendations/shadcn'
+    },
+    {
+        title: 'Zod',
+        description: 'Valide os dados do seu software de forma simples e rápida',
+        icon: <Zod />,
+        href: '/recommendations/zod'
+    },
+    {
+        title: 'Github Desktop',
+        description: 'Gerencie seus repositórios de forma simples e rápida por meio de uma interface gráfica',
+        icon: <GithubDesktop />,
+        href: 'https://github.com/apps/desktop',
+        externalLink: true
+    },
+    {
+        title: 'Postman',
+        description: 'Teste suas APIs de forma simples e rápida por meio de uma interface gráfica',
+        icon: <Postman />,
+        href: 'https://www.postman.com',
+        externalLink: true
     }
 ]
 
