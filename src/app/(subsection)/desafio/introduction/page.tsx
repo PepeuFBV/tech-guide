@@ -57,48 +57,68 @@ const projects: Project[] = [
     },
 ]
 
+const steps = [
+    {
+        id: 'requirements',
+        title: 'Levantamento de Requisitos',
+        description: 'Nessa etapa, são identificadas as necessidades do projeto, definindo escopo, funcionalidades e expectativas. A equipe discute os objetivos, limitações e principais desafios, garantindo um entendimento claro antes de seguir para o desenvolvimento.',
+    },
+    {
+        id: 'prototyping',
+        title: 'Prototipação',
+        description: 'Com os requisitos estabelecidos, são criados wireframes e protótipos para representar visualmente a interface e o fluxo do sistema. Essa fase permite validar ideias, ajustar detalhes antes da implementação e garantir uma experiência intuitiva para o usuário.',
+    },
+    {
+        id: 'development',
+        title: 'Desenvolvimento',
+        description: 'A fase de codificação transforma o protótipo em um sistema funcional. São estruturadas as telas, implementadas regras de negócio e integrados serviços necessários. A equipe segue um planejamento ágil, revisando e ajustando o código conforme necessário.',
+    },
+    {
+        id: 'testing',
+        title: 'Testes',
+        description: 'Com o sistema desenvolvido, são realizados testes para verificar a funcionalidade, desempenho e usabilidade. Identificam-se possíveis erros, garantindo que tudo funcione corretamente antes da entrega final. Ajustes e refinamentos são feitos conforme necessário para aprimorar a qualidade do produto.',
+    },
+]
+
+const Step = ({ title, description, id }: { title: string; description: string, id: string }) => {
+    return (
+        <div id={id} className='flex flex-col gap-2'>
+            <h2 className='text-2xl'>{title}</h2>
+            <p>{description}</p>
+        </div>
+    )
+}
 
 export default function Tailwind() {
     return (
         <div className='w-full h-full flex items-start justify-start md:space-x-10'>
-            <div className='w-full md:w-[75%] lg:w-[80%] mt-5 md:mt-0 flex flex-col justify-center space-y-3 px-3 md:px-10'>
+            <div className='w-full md:w-[75%] lg:w-[80%] mt-5 md:mt-0 flex flex-col justify-center gap-4 px-3 md:px-10'>
                 <PathDisplay />
-                <div className='flex flex-col space-y-10'>
-                    <div className='flex flex-col space-y-4'>
-                        <h1 id='introduction' className='text-4xl'>Introdução</h1>
-                        <p>O desafio da Fase 2 do Onboarding 2025.1 da Área de Projetos da Seed a Bit tem como objetivo desenvolver os membros por meio de projetos com aplicação prática, tanto interna quanto externamente. Para isso, seis projetos serão conduzidos, envolvendo tanto novos quanto antigos membros da equipe. Serão desenvolvidos três Sistemas Web e três Aplicativos Mobile, fortalecendo e consolidando esses dois serviços dentro da empresa.</p>
+                <section id='introduction' className='flex flex-col gap-4'>
+                    <h1 className='text-4xl'>Introdução</h1>
+                    <p>O desafio da Fase 2 do Onboarding 2025.1 da Área de Projetos da Seed a Bit tem como objetivo desenvolver os membros por meio de projetos com aplicação prática, tanto interna quanto externamente. Para isso, seis projetos serão conduzidos, envolvendo tanto novos quanto antigos membros da equipe. Serão desenvolvidos três Sistemas Web e três Aplicativos Mobile, fortalecendo e consolidando esses dois serviços dentro da empresa.</p>
+                </section>
+                <Divider variant='horizontal' color='secondary' className='w-full' />
+                <section id='steps' className='flex flex-col gap-6'>
+                    <h1 className='text-4xl'>Etapas</h1>
+                    <div className='flex flex-col gap-6'>
+                        {steps.map((step, index) => (
+                            <Step key={index} title={step.title} description={step.description} id={step.id} />
+                        ))}
                     </div>
-                    <Divider variant='horizontal' color='secondary' className='w-full' />
-                    <div className='flex flex-col space-y-6'>
-                        <h1 id='steps' className='text-4xl'>Etapas</h1>
-                        <div className='flex flex-col space-y-4'>
-                            <h2 id='requirements' className='text-2xl'>Levantamento de Requisitos</h2>
-                            <p>Nessa etapa, são identificadas as necessidades do projeto, definindo escopo, funcionalidades e expectativas. A equipe discute os objetivos, limitações e principais desafios, garantindo um entendimento claro antes de seguir para o desenvolvimento.</p>
-                        </div>
-                        <div className='flex flex-col space-y-4'>
-                            <h2 id='prototyping' className='text-2xl'>Prototipação</h2>
-                            <p>Com os requisitos estabelecidos, são criados wireframes e protótipos para representar visualmente a interface e o fluxo do sistema. Essa fase permite validar ideias, ajustar detalhes antes da implementação e garantir uma experiência intuitiva para o usuário.</p>
-                        </div>
-                        <div className='flex flex-col space-y-4'>
-                            <h2 id='prototyping' className='text-2xl'>Desenvolvimento</h2>
-                            <p>A fase de codificação transforma o protótipo em um sistema funcional. São estruturadas as telas, implementadas regras de negócio e integrados serviços necessários. A equipe segue um planejamento ágil, revisando e ajustando o código conforme necessário.</p>
-                        </div>
-                        <div className='flex flex-col space-y-4'>
-                            <h2 id='prototyping' className='text-2xl'>Testes</h2>
-                            <p>Com o sistema desenvolvido, são realizados testes para verificar a funcionalidade, desempenho e usabilidade. Identificam-se possíveis erros, garantindo que tudo funcione corretamente antes da entrega final. Ajustes e refinamentos são feitos conforme necessário para aprimorar a qualidade do produto.</p>
-                        </div>
-                    </div>
-                    <Divider variant='horizontal' color='secondary' className='w-full' />
-                    <div className='flex flex-col space-y-4'>
-                        <h1 id='projects' className='text-4xl'>Projetos</h1>
+                </section>
+                <Divider variant='horizontal' color='secondary' className='w-full' />
+                <section id='projects' className='flex flex-col gap-8'>
+                    <div className='flex flex-col gap-4'>
+                        <h1 className='text-4xl'>Projetos</h1>
                         <p className='text-gray-300'>Clique no projeto para ver os detalhes! (Notion)</p>
-                        <div className='grid col-span-1 md:col-span-2 xl:grid-cols-3 gap-4'>
-                            {projects.map((project, index) => (
-                                <ProjectCard key={index} project={project} />
-                            ))}
-                        </div>
                     </div>
-                </div>
+                    <div className='grid col-span-1 md:col-span-2 xl:grid-cols-3 gap-4'>
+                        {projects.map((project, index) => (
+                            <ProjectCard key={index} project={project} />
+                        ))}
+                    </div>
+                </section>
             </div>
             <PageIndex topics={topics} className='w-[20%] lg:w-[15%]' />
         </div>

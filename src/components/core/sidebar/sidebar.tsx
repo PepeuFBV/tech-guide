@@ -20,7 +20,7 @@ const Sidebar: React.FC<SidebarProps> = ({ className }) => { // sidebar class fo
     return (
         <section className={cn('w-full bg-sidebar overflow-y-scroll sidebar', className)}>
             <div className='my-9 px-8 w-full h-full flex flex-col space-y-7'>
-                <div className='flex flex-col md:space-y-1'>
+                <div className='flex flex-col md:gap-1'>
                     <Link passHref href='/'>
                         <Button
                             variant='link'
@@ -29,7 +29,7 @@ const Sidebar: React.FC<SidebarProps> = ({ className }) => { // sidebar class fo
                             React and Next Guide
                         </Button>
                     </Link>
-                    <Divider variant='horizontal' color={pathname === '/' ? 'highlight' : 'secondary'} />
+                    <Divider variant='horizontal' color={pathname === '/' ? 'highlight' : 'secondary'} className='my-0' />
                 </div>
                 <div className='flex flex-col space-y-3'>
                     {sidebar.map((group, index) => (
