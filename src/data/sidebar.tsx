@@ -141,11 +141,16 @@ const sidebar: SidebarEntry[] = [
     {
         id: 5,
         title: 'Recomendações',
-        href: '/recommendations',
+        href: '/recommendations/introduction',
         icon: <Archive size={16} />,
         items: [
             {
                 id: 17,
+                title: 'Introdução',
+                href: '/recommendations/introduction'
+            },
+            {
+                id: 18,
                 title: 'Jest',
                 href: '/recommendations/jest',
             }
