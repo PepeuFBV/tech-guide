@@ -1,9 +1,9 @@
+import React from 'react'
 import PageIndex from '@/components/core/page-index/page-index'
 import PathDisplay from '@/components/core/path-display'
 import { Divider } from '@/components/ui/divider'
 import VisitLink from '@/components/ui/visit-link'
 import { Topic } from '@/types/topic'
-import React from 'react'
 
 const topics: Topic[] = [
     { title: 'Introdução ao React', href: 'introduction' },
@@ -46,6 +46,6 @@ export default function Introduction() {
                 </section>
             </div>
             <PageIndex topics={topics} className='w-[20%] lg:w-[15%]' />
-        </div >
+        </div>
     )
 }
