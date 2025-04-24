@@ -5,6 +5,7 @@ import { NextJS } from '@/components/ui/icons/nextjs'
 import { Github } from '@/components/ui/icons/github'
 import { Archive } from 'lucide-react'
 import { FaLaptopCode } from 'react-icons/fa'
+import { SeedaBit } from '@/components/ui/icons/seedabit'
 
 const sidebar: SidebarEntry[] = [
     {
@@ -122,35 +123,48 @@ const sidebar: SidebarEntry[] = [
     },
     {
         id: 4,
+        title: 'Seed a Bit - CLI',
+        href: '/cli/learn',
+        icon: <SeedaBit size={16} />,
+        items: [
+            {
+                id: 16,
+                title: 'Aprenda',
+                href: '/cli/learn',
+            }
+        ]
+    },
+    {
+        id: 5,
         title: 'Desafio',
         href: '/desafio/introduction',
         icon: <FaLaptopCode />,
         items: [
             {
-                id: 16,
+                id: 18,
                 title: 'Introdução',
                 href: '/desafio/introduction',
             },
             // {
-            //     id: 17,
+            //     id: 19,
             //     title: 'Monitorias',
             //     href: '/desafio/steps',
             // },
         ],
     },
     {
-        id: 5,
+        id: 6,
         title: 'Recomendações',
         href: '/recommendations/introduction',
         icon: <Archive size={16} />,
         items: [
             {
-                id: 17,
+                id: 19,
                 title: 'Introdução',
                 href: '/recommendations/introduction'
             },
             {
-                id: 18,
+                id: 20,
                 title: 'Jest',
                 href: '/recommendations/jest',
             }
