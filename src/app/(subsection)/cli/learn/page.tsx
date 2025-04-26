@@ -38,7 +38,7 @@ export default function CLI() {
                 <section id='commands' className='flex flex-col gap-4'>
                     <h2 className='text-3xl'>Comandos</h2>
                     <p className='text-secondary'>É possível se acessar a lista de comandos disponíveis através do comando <code>help</code> da CLI.</p>
-                    <p>A CLI possui diversos comandos que podem ser utilizados para criar novos projetos, importar componentes e executar tarefas comuns. Abaixo estão os comandos disponíveis:</p>
+                    <p>A CLI possui diversos comandos que podem ser utilizados para criar novos projetos, importar componentes e importar ferramentas. Abaixo estão os comandos disponíveis:</p>
                     <ul className='list-disc list-inside space-y-2 my-4'>
                         <li><code>npx @seed-a-bit/cli create [nome do projeto] --[tipo do projeto]</code></li>
                         <li><code>npx @seed-a-bit/cli add [nome do componente]</code></li>
