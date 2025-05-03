@@ -43,7 +43,8 @@ export default function CLI() {
                         <li><code>npx @seed-a-bit/cli create [nome do projeto] --[tipo do projeto]</code></li>
                         <li><code>npx @seed-a-bit/cli add [nome do componente]</code></li>
                     </ul>
-                    <p className='text-secondary'>Os tipos de projetos disponíveis são: web (next e react com typescript e tailwindcss) e backend (express e prisma com typescript).</p>
+                    <p>Veja mais sobre cada tipo de <VisitLink href='/cli/projects'>projetos</VisitLink> e <VisitLink href='/cli/components'>componentes</VisitLink> nas suas respectivas páginas.</p>
+                    <p className='text-secondary'>Se o tipo de projeto não for especificado, o projeto será criado como um projeto web.</p>
                 </section>
             </div>
             <PageIndex topics={topics} className='w-[20%] lg:w-[15%]' />
