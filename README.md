@@ -1,24 +1,34 @@
-# React Next TailwindCSS Guide
+# Full-Stack Development Guide: Next.js, Express.js, TypeScript, and More
 
-Learn from the ground-up how start building React applications with the Next.js framework and TailwindCSS library. We will cover the basics of React, Next.js, and TailwindCSS; as well as how to integrate them together to build a simple application.
+Learn from the ground up how to build full-stack applications using modern tools and frameworks. This guide covers building React applications with the Next.js framework, creating backend APIs with Express.js, and using TypeScript for type safety. Additionally, you'll learn how to use the company's CLI tool to streamline development and manage projects, as well as Git and GitHub for version control and collaboration.
 
-Other libraries and tools are also explored to help you get started with building your own React applications.
+## What You'll Learn
+
+- **Frontend Development**: Build React applications with Next.js and TailwindCSS.
+- **Backend Development**: Create APIs and server-side logic with Express.js.
+- **CLI Tool**: Learn how to use the company's CLI to create and manage projects efficiently.
+- **Version Control**: Master Git and GitHub for collaboration and version management.
 
 ## Installation
 
-To get started, you will need to have Node.js installed on your machine. You can download Node.js from the official website: [https://nodejs.org](https://nodejs.org).
+To get started, ensure you have the following installed on your machine:
 
-Once you have Node.js installed, you can clone the repository and install the dependencies:
+- **Node.js**: Download it from the official website: [https://nodejs.org](https://nodejs.org).
+- **Git**: Install Git from [https://git-scm.com](https://git-scm.com).
+
+Once installed, clone the repository and install the dependencies:
 
 ```bash
-git clone https://github.com/seedabit/react-next-guide.git
-cd react-next-tailwindcss-guide
+git clone https://github.com/seedabit/guide.git
+cd guide
 npm install
 ```
 
 ## Usage
 
-To start the development server, run the following command:
+### Starting the Development Server
+
+For running this guide, you can use the following commands:
 
 ```bash
 npm run dev
