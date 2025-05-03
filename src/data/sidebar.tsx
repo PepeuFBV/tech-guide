@@ -137,6 +137,11 @@ const sidebar: SidebarEntry[] = [
                 title: 'Projetos',
                 href: '/cli/projects',
             },
+            {
+                id: 18,
+                title: 'Componentes',
+                href: '/cli/components',
+            }
         ]
     },
     {
@@ -146,7 +151,7 @@ const sidebar: SidebarEntry[] = [
         icon: <FaLaptopCode />,
         items: [
             {
-                id: 18,
+                id: 19,
                 title: 'Introdução',
                 href: '/desafio/introduction',
             },
@@ -164,12 +169,12 @@ const sidebar: SidebarEntry[] = [
         icon: <Archive size={16} />,
         items: [
             {
-                id: 19,
+                id: 20,
                 title: 'Introdução',
                 href: '/recommendations/introduction'
             },
             {
-                id: 20,
+                id: 21,
                 title: 'Jest',
                 href: '/recommendations/jest',
             }
