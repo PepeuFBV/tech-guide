@@ -21,6 +21,7 @@ export default function CLI() {
                 <section id='introduction' className='flex flex-col gap-4'>
                     <h1 className='text-4xl'>Introdução</h1>
                     <p>Abaixo você conhecerá o CLI da Seed a Bit, uma ferramenta que facilita a criação de projetos e a execução de tarefas comuns. O CLI é uma interface de linha de comando que permite interagir com o sistema através de comandos digitados no terminal. Será possível criar novos projetos e importar componentes comuns para o seu projeto rapidamente e facilmente.</p>
+                    <p className='text-secondary'>Veja a página da CLI no <VisitLink href='https://www.npmjs.com/package/@seed-a-bit/cli' target='_blank'>npm</VisitLink>.</p>
                 </section>
                 <Divider variant='horizontal' color='secondary' className='w-full' />
                 <section id='seed-a-bit-repositories' className='flex flex-col gap-4'>
