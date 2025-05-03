@@ -94,7 +94,7 @@ const CodeArea: React.FC<CodeAreaProps> = ({ link, code, copy = true, language, 
     }
 
     return (
-        <div className='flex flex-col space-y-0'>
+        <div className='flex flex-col space-y-0 py-2'>
             {downloadLink && (
                 <a href={downloadLink} download={fileName} className='w-fit'>
                     <div className='ml-1 flex items-center gap-2'>

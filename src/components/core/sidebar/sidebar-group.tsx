@@ -1,11 +1,9 @@
 import React from 'react'
 import { SidebarTitle } from '@/components/core/sidebar/sidebar-title'
 import { Divider } from '@/components/ui/divider'
-
+import { SidebarButton } from '@/components/core/sidebar/sidebar-button'
 import type { SidebarItem } from '@/types/sidebar'
-
 import { cn } from '@/utils/lib/tailwind-merge'
-import { SidebarButton } from './sidebar-button'
 
 const INDIVIDUAL_DIV_HEIGHT = 300
 
