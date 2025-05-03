@@ -131,7 +131,12 @@ const sidebar: SidebarEntry[] = [
                 id: 16,
                 title: 'Aprenda',
                 href: '/cli/learn',
-            }
+            },
+            {
+                id: 17,
+                title: 'Projetos',
+                href: '/cli/projects',
+            },
         ]
     },
     {
