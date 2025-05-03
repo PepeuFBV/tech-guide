@@ -21,6 +21,7 @@ export default function CLI() {
                 <section id='introduction' className='flex flex-col gap-4'>
                     <h1 className='text-4xl'>Introdução</h1>
                     <p>Abaixo você conhecerá o CLI da Seed a Bit, uma ferramenta que facilita a criação de projetos e a execução de tarefas comuns. O CLI é uma interface de linha de comando que permite interagir com o sistema através de comandos digitados no terminal. Será possível criar novos projetos e importar componentes comuns para o seu projeto rapidamente e facilmente.</p>
+                    <p className='text-secondary'>Veja a página da CLI no <VisitLink href='https://www.npmjs.com/package/@seed-a-bit/cli' target='_blank'>npm</VisitLink>.</p>
                 </section>
                 <Divider variant='horizontal' color='secondary' className='w-full' />
                 <section id='seed-a-bit-repositories' className='flex flex-col gap-4'>
@@ -32,7 +33,6 @@ export default function CLI() {
                     <h2 className='text-3xl'>Como utilizar o CLI</h2>
                     <p>Para utilizar a CLI, você precisará ter o Node.js instalado em sua máquina. Você pode baixar a versão mais recente do Node.js no site oficial: <VisitLink href='https://nodejs.org/en/download/' target='_blank'>nodejs.org</VisitLink>. Após a instalação, você poderá acessar o CLI através do terminal. Execute o seguinte comando para acessar a aba de ajuda da CLI:</p>
                     <CodeArea code={`npx @seed-a-bit/cli help`} language='bash' />
-                    <p className='text-secondary'>Não é necessário instalar a CLI para a utilização, ela é executada diretamente pela publicação do npm.</p>
                 </section>
                 <Divider variant='horizontal' color='secondary' className='w-full' />
                 <section id='commands' className='flex flex-col gap-4'>
