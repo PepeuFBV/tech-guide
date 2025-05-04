@@ -21,7 +21,7 @@ export default function Introduction() {
                 <PathDisplay />
                 <section id='introduction' className='flex flex-col gap-4'>
                     <h1 className='text-4xl'>Git e Github</h1>
-                    <p>Abaixo será explicado o que é o Git e o Github, como instalar e configurar o Git e como utilizar o Github nos padrões da empresa para armazenamento e versionamento de código em equipe. <span className='line-through'>Aprenderemos a criar um repositório, clonar, fazer o commit, pull e push de arquivos.</span></p>
+                    <p>Abaixo será explicado o que é o Git e o Github, como instalar e configurar o Git e como utilizar o Github nos padrões da empresa para armazenamento e versionamento de código em equipe. Aprenderemos a criar um repositório, clonar, fazer o commit, pull e push de arquivos.</p>
                 </section>
                 <Divider variant='horizontal' color='secondary' className='w-full' />
                 <section id='what-is-git' className='flex flex-col gap-4'>
