@@ -115,6 +115,11 @@ const sidebar: SidebarEntry[] = [
             },
             {
                 id: 15,
+                title: 'Repositórios, Commits e Branches',
+                href: '/git/repositories-commits-and-branches',
+            },
+            {
+                id: 16,
                 title: 'Commits Semânticos',
                 href: '/git/semantic-commits',
             }
@@ -128,17 +133,17 @@ const sidebar: SidebarEntry[] = [
         icon: <SeedaBit size={16} />,
         items: [
             {
-                id: 16,
+                id: 17,
                 title: 'Aprenda',
                 href: '/cli/learn',
             },
             {
-                id: 17,
+                id: 18,
                 title: 'Projetos',
                 href: '/cli/projects',
             },
             {
-                id: 18,
+                id: 19,
                 title: 'Componentes',
                 href: '/cli/components',
             }
@@ -151,12 +156,12 @@ const sidebar: SidebarEntry[] = [
         icon: <FaLaptopCode />,
         items: [
             {
-                id: 19,
+                id: 20,
                 title: 'Introdução',
                 href: '/desafio/introduction',
             },
             // {
-            //     id: 19,
+            //     id: 21,
             //     title: 'Monitorias',
             //     href: '/desafio/steps',
             // },
@@ -169,12 +174,12 @@ const sidebar: SidebarEntry[] = [
         icon: <Archive size={16} />,
         items: [
             {
-                id: 20,
+                id: 21,
                 title: 'Introdução',
                 href: '/recommendations/introduction'
             },
             {
-                id: 21,
+                id: 22,
                 title: 'Jest',
                 href: '/recommendations/jest',
             }
