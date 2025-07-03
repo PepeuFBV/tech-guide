@@ -10,6 +10,7 @@ import { ShadcnUI } from '@/components/ui/icons/shadcnui'
 import { Zod } from '@/components/ui/icons/zod'
 import { GithubDesktop } from '@/components/ui/icons/github-desktop'
 import { Postman } from '@/components/ui/icons/postman'
+import { Axios } from '@/components/ui/icons/axios'
 
 const topics: Topic[] = [
     { title: 'Introdução', href: 'introduction' },
@@ -48,6 +49,12 @@ const tech: Tech[] = [
         icon: <Postman />,
         href: 'https://www.postman.com',
         externalLink: true
+    },
+    {
+        title: 'Axios',
+        description: 'Realize requisições HTTP de forma simples e rápida',
+        icon: <Axios />,
+        href: '/recommendations/axios',
     }
 ]
 
