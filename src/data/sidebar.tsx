@@ -182,6 +182,11 @@ const sidebar: SidebarEntry[] = [
                 id: 22,
                 title: 'Jest',
                 href: '/recommendations/jest',
+            },
+            {
+                id: 23,
+                title: 'Axios',
+                href: '/recommendations/axios',
             }
         ]
     }
