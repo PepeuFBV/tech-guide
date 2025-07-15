@@ -103,7 +103,7 @@ const sidebar: SidebarEntry[] = [
             {
                 id: 14,
                 title: 'Props e Hooks',
-                href: '/react-native/propsandhooks'
+                href: '/react-native/props-and-hooks'
             },
             {
                 id: 15,
@@ -167,7 +167,7 @@ const sidebar: SidebarEntry[] = [
                 href: '/git/semantic-commits',
             }
         ],
-    
+
     },
     {
         id: 5,
