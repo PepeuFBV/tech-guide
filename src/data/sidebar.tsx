@@ -81,7 +81,7 @@ const sidebar: SidebarEntry[] = [
     },
     {
         id: 2,
-        title: 'ReactNative',
+        title: 'React Native',
         href: '/react-native/introduction',
         icon: <ReactJS />,
         items: [
