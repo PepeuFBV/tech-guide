@@ -12,13 +12,13 @@ const nunito = Nunito({
 
 export const metadata: Metadata = {
     title: 'Seed a Bit\'s Code Guide',
-    description: 'A complete guide from starting with the frameworks used by Seed a Bit',
+    description: 'A complete guide from starting with the tools, frameworks and languages used by Seed a Bit',
     applicationName: 'Seed a Bit\'s Guide',
     authors: [{ url: 'www.pedrofbv.site', name: 'Pedro Figueira' }],
     keywords: ['web', 'react', 'nextjs', 'guide', 'webdev', 'frontend', 'cli'],
     creator: 'Pedro Figueira',
-    publisher: 'Pedro Figueira',
-    abstract: 'A complete guide to get started with the Seed a Bit\'s coding ecosystem'
+    publisher: 'Seed a Bit',
+    abstract: 'A complete guide to get started with the Seed a Bit\'s coding ecossystem'
 }
 
 export default function RootLayout({

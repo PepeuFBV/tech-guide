@@ -25,7 +25,7 @@ const Sidebar: React.FC<SidebarProps> = ({ className }) => { // sidebar class fo
                             variant='link'
                             className={cn('w-fit px-2 text-base text-wrap font-bold text-accent-foreground hover:no-underline', mainTitleHighlight)}
                         >
-                            React and Next Guide
+                            Code Guide
                         </Button>
                     </Link>
                     <Divider variant='horizontal' color={pathname === '/' ? 'highlight' : 'secondary'} className='my-0' />
