@@ -91,7 +91,7 @@ export default function Tailwind() {
                             <li><code>xl</code>: Extra Large (1280px)</li>
                             <li><code>2xl</code>: Extra Extra Large (1536px)</li>
                         </ul>
-                        <p className='text-secondary'>Você também pode criar classes utilitárias customizadas com base em tamanhos de tela, como explicado na seção de customização.</p>
+                        <p className='text-secondary'>Você também pode criar classes utilitárias customizadas com base em tamanhos de tela, como demonstrado na seção de customização.</p>
                         <p>Veja um exemplo prático de modificadores responsivos:</p>
                         <CodeArea link='/ecosystem/tailwind/modifiers-example2.html' />
                         <ul className='list-disc list-inside space-y-2 my-4'>

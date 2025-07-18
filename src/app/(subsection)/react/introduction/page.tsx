@@ -31,7 +31,7 @@ export default function Introduction() {
                 <Divider variant='horizontal' color='secondary' className='w-full' />
                 <section id='installation' className='flex flex-col gap-4'>
                     <h2 className='text-3xl'>Instalação</h2>
-                    <p className='text-secondary'>Tenho o prazer de lhe dizer para não se preocupar com instação no momento: o React vai vir pré-instalado nas suas aplicações Next.JS! Se você não sabe o que é Next.JS, não se preocupe ainda: há uma sessão inteira para isso! Se é sua primeira vez aqui, recomendo começar brincando com um SandBox como o encontrado <VisitLink href='https://codesandbox.io/p/sandbox/react-new' target='_blank'>aqui.</VisitLink></p>
+                    <p>Tenho o prazer de lhe dizer para não se preocupar com instação no momento: o React vai vir pré-instalado nas suas aplicações Next.JS! Se você não sabe o que é Next.JS, não se preocupe ainda: há uma sessão inteira para isso! Se é sua primeira vez aqui, recomendo começar brincando com um SandBox como o encontrado <VisitLink href='https://codesandbox.io/p/sandbox/react-new' target='_blank'>aqui.</VisitLink></p>
                 </section>
                 <Divider variant='horizontal' color='secondary' className='w-full' />
                 <section id='concepts' className='flex flex-col gap-4'>

@@ -31,8 +31,11 @@ export default function CLI() {
                 <Divider variant='horizontal' color='secondary' className='w-full' />
                 <section id='how-to-use-cli' className='flex flex-col gap-4'>
                     <h2 className='text-3xl'>Como utilizar o CLI</h2>
-                    <p>Para utilizar a CLI, você precisará ter o Node.js instalado em sua máquina. Você pode baixar a versão mais recente do Node.js no site oficial: <VisitLink href='https://nodejs.org/en/download/' target='_blank'>nodejs.org</VisitLink>. Após a instalação, você poderá acessar o CLI através do terminal. Execute o seguinte comando para acessar a aba de ajuda da CLI:</p>
-                    <CodeArea code={`npx @seed-a-bit/cli help`} language='bash' />
+                    <p>Para utilizar a CLI, você precisará ter o Node.js instalado em sua máquina. Você pode baixar a versão mais recente do Node.js no site oficial: <VisitLink href='https://nodejs.org/en/download/' target='_blank'>nodejs.org</VisitLink>. Após a instalação, você poderá acessar o CLI através do terminal após a instalação global.</p>
+                    <p>Você pode começar baixando a CLI globalmente no seu computador:</p>
+                    <CodeArea code={`npm install -g @seed-a-bit/cli`} language='bash' />
+                    <p>Agora, execute o seguinte comando para acessar a aba de ajuda da CLI:</p>
+                    <CodeArea code={`npx @seed-a-bit/cli -h`} language='bash' />
                 </section>
                 <Divider variant='horizontal' color='secondary' className='w-full' />
                 <section id='commands' className='flex flex-col gap-4'>
